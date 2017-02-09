@@ -417,6 +417,8 @@
 		BBA5D5CD1E4C5B6C00D2CB44 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5C71E4C5B6C00D2CB44 /* SVProgressHUD.m */; };
 		BBA5D5CE1E4C5B6C00D2CB44 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5C91E4C5B6C00D2CB44 /* SVRadialGradientLayer.m */; };
 		BBA5D5F61E4C679900D2CB44 /* EatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5F51E4C679900D2CB44 /* EatTableViewController.m */; };
+		BBA5D5F91E4C762300D2CB44 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */; };
+		BBA5D5FC1E4C76BF00D2CB44 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */; };
 		BBFB44C41E2CD67E007A48EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFB44C31E2CD67E007A48EE /* main.m */; };
 		BBFB44C71E2CD67E007A48EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFB44C61E2CD67E007A48EE /* AppDelegate.m */; };
 		BBFB44CF1E2CD67E007A48EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFB44CE1E2CD67E007A48EE /* Assets.xcassets */; };
@@ -879,6 +881,10 @@
 		BBA5D5C91E4C5B6C00D2CB44 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		BBA5D5F41E4C679900D2CB44 /* EatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatTableViewController.h; sourceTree = "<group>"; };
 		BBA5D5F51E4C679900D2CB44 /* EatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatTableViewController.m; sourceTree = "<group>"; };
+		BBA5D5F71E4C762300D2CB44 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		BBA5D5FA1E4C76BF00D2CB44 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		BBFB44BF1E2CD67E007A48EE /* PlayToWhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayToWhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFB44C31E2CD67E007A48EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBFB44C51E2CD67E007A48EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1525,6 +1531,10 @@
 		BBFB44F61E2CEF80007A48EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BBA5D5F71E4C762300D2CB44 /* UIBarButtonItem+Extension.h */,
+				BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */,
+				BBA5D5FA1E4C76BF00D2CB44 /* UIView+Frame.h */,
+				BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2019,6 +2029,7 @@
 				BB9B092B1E4B36CA0078CFA4 /* FirstSectionNavigationController.m in Sources */,
 				BBFB44EA1E2CD98B007A48EE /* DestinationCollectionViewController.m in Sources */,
 				BB3900AB1E49E44A002367C4 /* ThirdSectionCell.m in Sources */,
+				BBA5D5FC1E4C76BF00D2CB44 /* UIView+Frame.m in Sources */,
 				BB0F73161E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m in Sources */,
 				BBA5D5B21E4C55A300D2CB44 /* MJRefreshAutoStateFooter.m in Sources */,
 				BBFB44FB1E2CEFBD007A48EE /* FirstSectionCell.m in Sources */,
@@ -2042,6 +2053,7 @@
 				BBA5D5BE1E4C55A300D2CB44 /* UIView+MJExtension.m in Sources */,
 				BBFB44C41E2CD67E007A48EE /* main.m in Sources */,
 				BBA5D5AE1E4C55A300D2CB44 /* MJRefreshFooter.m in Sources */,
+				BBA5D5F91E4C762300D2CB44 /* UIBarButtonItem+Extension.m in Sources */,
 				BBA5D5F61E4C679900D2CB44 /* EatTableViewController.m in Sources */,
 				BBA5D5CD1E4C5B6C00D2CB44 /* SVProgressHUD.m in Sources */,
 				BBA5D5AF1E4C55A300D2CB44 /* MJRefreshHeader.m in Sources */,

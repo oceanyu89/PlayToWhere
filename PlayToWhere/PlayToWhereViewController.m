@@ -39,10 +39,15 @@
 +(UITabBarController*)createTabBarView
 {
     UITabBarController *tab = [[UITabBarController alloc]init];
-//    UINavigationController *navi1 =[[UINavigationController alloc]initWithRootViewController:[[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil]];
-        FirstSectionNavigationController *navi1 =[[FirstSectionNavigationController alloc]initWithRootViewController:[[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil]];
+    // 哪好玩
+    MainTableViewController*mainVC =  [[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil];
+        FirstSectionNavigationController *navi1 =[[FirstSectionNavigationController alloc]initWithRootViewController:mainVC];
+    mainVC.navigationItem.title = @"";
+    //关注
     UINavigationController *navi2 =[[UINavigationController alloc]initWithRootViewController:[[ConcernTableViewController alloc]initWithNibName:@"ConcernTableViewController" bundle:nil]];
+    //目的地
     UINavigationController *navi3 =[[UINavigationController alloc]initWithRootViewController:[[DestinationCollectionViewController alloc]initWithNibName:@"DestinationCollectionViewController" bundle:nil]];
+    //我的
     UINavigationController *navi4 =[[UINavigationController alloc]initWithRootViewController:[[MeTableViewController alloc]initWithNibName:@"MeTableViewController" bundle:nil]];
     //中间tabbar的添加
     TabBarPhoto *barPhoto = [[TabBarPhoto alloc]init];
@@ -58,6 +63,9 @@
 {
     NSLog(@"sssss");
 }
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
