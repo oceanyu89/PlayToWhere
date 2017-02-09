@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  PlayToWhere
+//
+//  Created by ocean.yu on 2017/2/7.
+//  Copyright © 2017年 ocean.yu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "ThirdSectionCell.h"
+#import "FirstSectionCell.h"
+#import "SecondSectionCell.h"
+#import "CustomHeaderSectionView.h"
+#import "ForthSectionCell.h"
+#import "UIColor+ColorExtension.h"
+#import "CustomButton_leftTitleRightImage.h"
+#import "FirstSectionNavigationController.h"
+#import "SearchViewController.h"
+#import "MJRefresh.h"
+#import "EatTableViewController.h"
+
+/***  当前屏幕宽度 */
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+/***  当前屏幕高度 */
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+/***  屏宽比例 */
+#define SCREEN_WIDTH_RATIO (SCREEN_WIDTH / 375)
+#pragma mark - 字体
+/***  普通字体 */
+#define kFont(size) [UIFont systemFontOfSize:((size) * SCREEN_WIDTH_RATIO + SCREEN_WIDTH_RATIO * (SCREEN_WIDTH_RATIO < 1 ? 1 : - 1 ))]
+
+#endif /* PrefixHeader_pch */
+
+
+
