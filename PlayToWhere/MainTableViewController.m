@@ -88,13 +88,18 @@ static NSString * const identifier = @"myCell";
     }
     else if(indexPath.section ==2)
     {
-       ThirdSectionCell* cell =[ThirdSectionCell ThirdSectionCellForMain:tableView];
+        UITableViewCell *cell = [UITableViewCell new];
+//        ThirdSectionView *v = [[NSBundle mainBundle]loadNibNamed:@"ThirdSectionView" owner:nil options:nil].firstObject;
+        ThirdSectionView_Custom *v = [[ThirdSectionView_Custom alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 260)];
         
+        [cell.contentView addSubview:v];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     else
     {
         ForthSectionCell *cell =[ForthSectionCell ForthSectionCellForMain:tableView];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
     
@@ -108,25 +113,10 @@ static NSString * const identifier = @"myCell";
     
 }
 
-/**
- 设置表视图分区头view
-
- @param tableView tableView
- @param section 分区
- @return 返回一个view类型
- */
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    
-//    return [CustomHeaderSectionView customHeaderSectionView:tableView andSection:section];
-//}
 //分区头高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-//    if (section ==1||section==2||section==3) {
-//        return 30;
-//    }
-//    return 20;
+
     return 1;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -140,7 +130,7 @@ static NSString * const identifier = @"myCell";
         return 164;
     }
     if (indexPath.section ==2) {
-        return 270;
+        return 210;
     }
     return 108;
 }

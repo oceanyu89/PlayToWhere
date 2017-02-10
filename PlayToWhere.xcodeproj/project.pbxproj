@@ -23,6 +23,10 @@
 		BB8E4AB31E4D690C00C78C04 /* SecondSectionXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */; };
 		BB8E4AB61E4D6C2700C78C04 /* buttonAndImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */; };
 		BB8E4AE51E4DB6A000C78C04 /* ThirdSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */; };
+		BB8E4AE81E4DC9BA00C78C04 /* ThirdSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AE71E4DC9BA00C78C04 /* ThirdSectionView.m */; };
+		BB8E4AEA1E4DCAD300C78C04 /* ThirdSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AE91E4DCAD300C78C04 /* ThirdSectionView.xib */; };
+		BB8E4AF01E4DDC8F00C78C04 /* ThirdSectionView_Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AEF1E4DDC8F00C78C04 /* ThirdSectionView_Custom.m */; };
+		BB8E4AFC1E4DED4400C78C04 /* CustomCellWithAcessoryImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AFB1E4DED4400C78C04 /* CustomCellWithAcessoryImage.m */; };
 		BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */; };
 		BB9B092B1E4B36CA0078CFA4 /* FirstSectionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092A1E4B36CA0078CFA4 /* FirstSectionNavigationController.m */; };
 		BB9B092F1E4B3BD90078CFA4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092D1E4B3BD90078CFA4 /* SearchViewController.m */; };
@@ -474,6 +478,13 @@
 		BB8E4AB41E4D6C2700C78C04 /* buttonAndImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonAndImageView.h; sourceTree = "<group>"; };
 		BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonAndImageView.m; sourceTree = "<group>"; };
 		BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdSectionCell.xib; sourceTree = "<group>"; };
+		BB8E4AE61E4DC9BA00C78C04 /* ThirdSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdSectionView.h; sourceTree = "<group>"; };
+		BB8E4AE71E4DC9BA00C78C04 /* ThirdSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdSectionView.m; sourceTree = "<group>"; };
+		BB8E4AE91E4DCAD300C78C04 /* ThirdSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdSectionView.xib; sourceTree = "<group>"; };
+		BB8E4AEE1E4DDC8F00C78C04 /* ThirdSectionView_Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdSectionView_Custom.h; sourceTree = "<group>"; };
+		BB8E4AEF1E4DDC8F00C78C04 /* ThirdSectionView_Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdSectionView_Custom.m; sourceTree = "<group>"; };
+		BB8E4AFA1E4DED4400C78C04 /* CustomCellWithAcessoryImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellWithAcessoryImage.h; sourceTree = "<group>"; };
+		BB8E4AFB1E4DED4400C78C04 /* CustomCellWithAcessoryImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellWithAcessoryImage.m; sourceTree = "<group>"; };
 		BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton_leftTitleRightImage.h; sourceTree = "<group>"; };
 		BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton_leftTitleRightImage.m; sourceTree = "<group>"; };
 		BB9B09291E4B36CA0078CFA4 /* FirstSectionNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstSectionNavigationController.h; sourceTree = "<group>"; };
@@ -1353,8 +1364,16 @@
 		BB8E4AB91E4D6F0200C78C04 /* temp */ = {
 			isa = PBXGroup;
 			children = (
+				BB0F73141E2E2DFE00ECE3F1 /* CustomHeaderSectionView.h */,
+				BB0F73151E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m */,
+				BB3900A91E49E44A002367C4 /* ThirdSectionCell.h */,
+				BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */,
+				BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */,
 				BB0F72461E2DB42700ECE3F1 /* SecondSectionCell.h */,
 				BB0F72471E2DB42700ECE3F1 /* SecondSectionCell.m */,
+				BB8E4AE61E4DC9BA00C78C04 /* ThirdSectionView.h */,
+				BB8E4AE71E4DC9BA00C78C04 /* ThirdSectionView.m */,
+				BB8E4AE91E4DCAD300C78C04 /* ThirdSectionView.xib */,
 			);
 			name = temp;
 			sourceTree = "<group>";
@@ -1364,6 +1383,8 @@
 			children = (
 				BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */,
 				BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */,
+				BB8E4AFA1E4DED4400C78C04 /* CustomCellWithAcessoryImage.h */,
+				BB8E4AFB1E4DED4400C78C04 /* CustomCellWithAcessoryImage.m */,
 			);
 			name = CustomAnyMore;
 			sourceTree = "<group>";
@@ -1532,13 +1553,10 @@
 				BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */,
 				BB8E4AB41E4D6C2700C78C04 /* buttonAndImageView.h */,
 				BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */,
-				BB3900A91E49E44A002367C4 /* ThirdSectionCell.h */,
-				BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */,
-				BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */,
+				BB8E4AEE1E4DDC8F00C78C04 /* ThirdSectionView_Custom.h */,
+				BB8E4AEF1E4DDC8F00C78C04 /* ThirdSectionView_Custom.m */,
 				BB3900EC1E49E9E0002367C4 /* ForthSectionCell.h */,
 				BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */,
-				BB0F73141E2E2DFE00ECE3F1 /* CustomHeaderSectionView.h */,
-				BB0F73151E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m */,
 			);
 			name = FirstView;
 			sourceTree = "<group>";
@@ -1881,6 +1899,7 @@
 				BBA5D4DE1E4C29F500D2CB44 /* ProfilePageSettingBtn@3x.png in Resources */,
 				BBA5D4C01E4C29F500D2CB44 /* photo-delete@2x.png in Resources */,
 				BBA5D3C71E4C29F400D2CB44 /* AddRemindPageAddBtn@2x.png in Resources */,
+				BB8E4AEA1E4DCAD300C78C04 /* ThirdSectionView.xib in Resources */,
 				BBA5D4A51E4C29F500D2CB44 /* LoginPageCheckBoxUncheck@2x.png in Resources */,
 				BBA5D47D1E4C29F400D2CB44 /* hint-post@2x.png in Resources */,
 				BBA5D5381E4C29F500D2CB44 /* wechat_F@2x.png in Resources */,
@@ -2117,6 +2136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFB44C71E2CD67E007A48EE /* AppDelegate.m in Sources */,
+				BB8E4AF01E4DDC8F00C78C04 /* ThirdSectionView_Custom.m in Sources */,
 				BBB994AB1E4CC4CB00B471B3 /* ContainerViewController.m in Sources */,
 				BB0F72401E2DA8D000ECE3F1 /* PlayToWhereViewController.m in Sources */,
 				BBFB44EF1E2CD9D5007A48EE /* MeTableViewController.m in Sources */,
@@ -2138,12 +2158,14 @@
 				BB8E4AB21E4D690C00C78C04 /* SecondSectionXibCell.m in Sources */,
 				BBA5D5B41E4C55A300D2CB44 /* MJRefreshBackNormalFooter.m in Sources */,
 				BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */,
+				BB8E4AE81E4DC9BA00C78C04 /* ThirdSectionView.m in Sources */,
 				BBA5D5BD1E4C55A300D2CB44 /* UIScrollView+MJRefresh.m in Sources */,
 				BBA5D5CE1E4C5B6C00D2CB44 /* SVRadialGradientLayer.m in Sources */,
 				BBA5D5AD1E4C55A300D2CB44 /* MJRefreshComponent.m in Sources */,
 				BBFB44E51E2CD939007A48EE /* ConcernTableViewController.m in Sources */,
 				BB4C237C1E4D4A66005A1D7F /* YUHYContainerViewController.m in Sources */,
 				BBA5D5BC1E4C55A300D2CB44 /* UIScrollView+MJExtension.m in Sources */,
+				BB8E4AFC1E4DED4400C78C04 /* CustomCellWithAcessoryImage.m in Sources */,
 				BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */,
 				BBA5D6341E4C928A00D2CB44 /* NearPeopleTableViewController.m in Sources */,
 				BB3900EE1E49E9E0002367C4 /* ForthSectionCell.m in Sources */,

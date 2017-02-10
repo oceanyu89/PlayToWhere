@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdSectionCell : UITableViewCell
+@interface ThirdSectionCell : UITableViewCell<UITableViewDataSource,UITableViewDelegate>
 
 +(instancetype)ThirdSectionCellForMain:(UITableView*)tableview;
 
-//@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
