@@ -9,32 +9,15 @@
 #import "ContainerViewController.h"
 
 @interface ContainerViewController ()<YUHYContainerViewControllerDelegate>
-@property(nonatomic,strong) UIButton *backBtn;
+
 @end
 
 @implementation ContainerViewController
 
--(UIButton *)backBtn
-{
-    if (_backBtn==nil) {
-        _backBtn =[UIButton buttonWithType:UIButtonTypeCustom];
-        _backBtn.frame = CGRectMake(10, 25, 30 , 30);
-//        [_backBtn setBackgroundImage:[UIImage imageNamed:@"navigation-back"] forState:UIControlStateNormal];
-        _backBtn.backgroundColor = [UIColor redColor];
-        [_backBtn addTarget:self action:@selector(backClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:_backBtn];
-    }
-    return _backBtn;
-}
--(void)backClicked:(UIButton *)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self backBtn];
     
     
     EatViewController *eatVC = [[EatViewController alloc]initWithNibName:@"EatViewController" bundle:nil];

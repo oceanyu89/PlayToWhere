@@ -91,12 +91,10 @@ static NSString * const identifier = @"myCell";
 #pragma mark - 执行FirstSectionCell中按钮的代理方法
 -(void)customPushToEatView:(FirstSectionCell *)FirstSectionCell
 {
-//    EatViewController *eatVC = [[EatViewController alloc]initWithNibName:@"EatViewController" bundle:nil];
-//    [self.navigationController pushViewController:eatVC animated:YES];
-    
+
     ContainerViewController *containerVC = [ContainerViewController new];
-//    [self.navigationController pushViewController:containerVC animated:YES];
-    [self presentViewController:containerVC animated:YES completion:nil];
+    [self presentViewController:containerVC animated:YES ];//自定义动画presentViewController
+    
 }
 
 /**

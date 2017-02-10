@@ -18,8 +18,10 @@
     
 }
 - (IBAction)playBtnClicked:(UIButton *)sender {
+     [self.delegate customPushToEatView:self];
 }
 - (IBAction)sleepBtnClicked:(UIButton *)sender {
+     [self.delegate customPushToEatView:self];
 }
 
 +(instancetype)FirstSectionCellForMain:(UITableView *)tableview

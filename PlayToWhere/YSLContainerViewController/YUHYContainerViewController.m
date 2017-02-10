@@ -22,6 +22,7 @@ static const CGFloat kYUHYScrollMenuViewHeight = 40;
         _backBtn.frame = CGRectMake(10, 10, 30 , 30);
                 [_backBtn setBackgroundImage:[UIImage imageNamed:@"navigation-back"] forState:UIControlStateNormal];
         [_backBtn addTarget:self action:@selector(backClicked:) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.menuView addSubview:_backBtn];
     }
     return _backBtn;

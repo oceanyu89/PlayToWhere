@@ -18,6 +18,7 @@
 		BB4C237C1E4D4A66005A1D7F /* YUHYContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C23791E4D4A66005A1D7F /* YUHYContainerViewController.m */; };
 		BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */; };
 		BB5865C11E4895BD00075EC8 /* TabBarPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */; };
+		BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */; };
 		BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */; };
 		BB9B092B1E4B36CA0078CFA4 /* FirstSectionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092A1E4B36CA0078CFA4 /* FirstSectionNavigationController.m */; };
 		BB9B092F1E4B3BD90078CFA4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092D1E4B3BD90078CFA4 /* SearchViewController.m */; };
@@ -461,6 +462,8 @@
 		BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUHYScrollMenuView.m; sourceTree = "<group>"; };
 		BB5865BF1E4895BD00075EC8 /* TabBarPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarPhoto.h; sourceTree = "<group>"; };
 		BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarPhoto.m; sourceTree = "<group>"; };
+		BB8E4AAB1E4D5FF100C78C04 /* UIViewController+PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentViewController.h"; sourceTree = "<group>"; };
+		BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentViewController.m"; sourceTree = "<group>"; };
 		BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton_leftTitleRightImage.h; sourceTree = "<group>"; };
 		BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton_leftTitleRightImage.m; sourceTree = "<group>"; };
 		BB9B09291E4B36CA0078CFA4 /* FirstSectionNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstSectionNavigationController.h; sourceTree = "<group>"; };
@@ -1322,6 +1325,21 @@
 			path = YSLContainerViewController;
 			sourceTree = "<group>";
 		};
+		BB8E4AAE1E4D647D00C78C04 /* Catogory */ = {
+			isa = PBXGroup;
+			children = (
+				BBA5D5F71E4C762300D2CB44 /* UIBarButtonItem+Extension.h */,
+				BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */,
+				BBA5D5FA1E4C76BF00D2CB44 /* UIView+Frame.h */,
+				BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */,
+				BB8E4AAB1E4D5FF100C78C04 /* UIViewController+PresentViewController.h */,
+				BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */,
+				BB0F724C1E2DB63600ECE3F1 /* UIColor+ColorExtension.h */,
+				BB0F724D1E2DB63600ECE3F1 /* UIColor+ColorExtension.m */,
+			);
+			name = Catogory;
+			sourceTree = "<group>";
+		};
 		BBA5D57B1E4C54EB00D2CB44 /* 三方库 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1522,14 +1540,13 @@
 				BBFB44E01E2CD8CD007A48EE /* 目的地 */,
 				BBFB44DF1E2CD8C5007A48EE /* 关注 */,
 				BBFB44DE1E2CD8B6007A48EE /* 哪好玩 */,
+				BB8E4AAE1E4D647D00C78C04 /* Catogory */,
 				BBFB44C51E2CD67E007A48EE /* AppDelegate.h */,
 				BBFB44C61E2CD67E007A48EE /* AppDelegate.m */,
 				BB0F723E1E2DA8D000ECE3F1 /* PlayToWhereViewController.h */,
 				BB0F723F1E2DA8D000ECE3F1 /* PlayToWhereViewController.m */,
 				BB5865BF1E4895BD00075EC8 /* TabBarPhoto.h */,
 				BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */,
-				BB0F724C1E2DB63600ECE3F1 /* UIColor+ColorExtension.h */,
-				BB0F724D1E2DB63600ECE3F1 /* UIColor+ColorExtension.m */,
 				BB3900AC1E49E560002367C4 /* PrefixHeader.pch */,
 				BBA5D57B1E4C54EB00D2CB44 /* 三方库 */,
 				BBFB44CE1E2CD67E007A48EE /* Assets.xcassets */,
@@ -1591,10 +1608,6 @@
 		BBFB44F61E2CEF80007A48EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BBA5D5F71E4C762300D2CB44 /* UIBarButtonItem+Extension.h */,
-				BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */,
-				BBA5D5FA1E4C76BF00D2CB44 /* UIView+Frame.h */,
-				BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2096,6 +2109,7 @@
 				BBFB44E51E2CD939007A48EE /* ConcernTableViewController.m in Sources */,
 				BB4C237C1E4D4A66005A1D7F /* YUHYContainerViewController.m in Sources */,
 				BBA5D5BC1E4C55A300D2CB44 /* UIScrollView+MJExtension.m in Sources */,
+				BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */,
 				BBA5D6341E4C928A00D2CB44 /* NearPeopleTableViewController.m in Sources */,
 				BB3900EE1E49E9E0002367C4 /* ForthSectionCell.m in Sources */,
 				BBA5D5AC1E4C55A300D2CB44 /* MJRefreshBackFooter.m in Sources */,
