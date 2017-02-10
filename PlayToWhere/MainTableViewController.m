@@ -33,7 +33,7 @@ static NSString * const identifier = @"myCell";
     [self.tableView.mj_header beginRefreshing];
     
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-    
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWith255Red:251 green:65 blue:66 alpha:255];
     
 }
 #pragma mark -下拉刷新操作
@@ -91,9 +91,12 @@ static NSString * const identifier = @"myCell";
 #pragma mark - 执行FirstSectionCell中按钮的代理方法
 -(void)customPushToEatView:(FirstSectionCell *)FirstSectionCell
 {
-    EatTableViewController *eatVC = [EatTableViewController new];
-    [self.navigationController pushViewController:eatVC animated:YES];
+//    EatViewController *eatVC = [[EatViewController alloc]initWithNibName:@"EatViewController" bundle:nil];
+//    [self.navigationController pushViewController:eatVC animated:YES];
     
+    ContainerViewController *containerVC = [ContainerViewController new];
+//    [self.navigationController pushViewController:containerVC animated:YES];
+    [self presentViewController:containerVC animated:YES completion:nil];
 }
 
 /**

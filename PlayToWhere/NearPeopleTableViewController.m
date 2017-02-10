@@ -1,18 +1,18 @@
 //
-//  EatTableViewController.m
+//  NearPeopleTableViewController.m
 //  PlayToWhere
 //
 //  Created by ocean.yu on 2017/2/9.
 //  Copyright © 2017年 ocean.yu. All rights reserved.
 //
 
-#import "EatTableViewController.h"
+#import "NearPeopleTableViewController.h"
 
-@interface EatTableViewController ()
+@interface NearPeopleTableViewController ()
 
 @end
 
-@implementation EatTableViewController
+@implementation NearPeopleTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -82,6 +82,22 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
+}
+*/
+
+/*
+#pragma mark - Table view delegate
+
+// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Navigation logic may go here, for example:
+    // Create the next view controller.
+    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+    
+    // Pass the selected object to the new view controller.
+    
+    // Push the view controller.
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 */
 

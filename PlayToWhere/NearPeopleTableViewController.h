@@ -1,5 +1,5 @@
 //
-//  EatTableViewController.h
+//  NearPeopleTableViewController.h
 //  PlayToWhere
 //
 //  Created by ocean.yu on 2017/2/9.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EatTableViewController : UITableViewController
+@interface NearPeopleTableViewController : UITableViewController
 
 @end

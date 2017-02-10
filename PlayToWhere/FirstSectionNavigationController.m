@@ -19,7 +19,7 @@
     self = [super initWithRootViewController:rootViewController];
     if (self) {
         
-        self.navigationBar.barTintColor = [UIColor colorWith255Red:251 green:65 blue:66 alpha:255];
+
         
         //设置右按钮
         rootViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"wishlist_24x24_"] style:(UIBarButtonItemStyleDone) target:self action:@selector(rightClicked:)];
@@ -84,7 +84,7 @@
     
     self.navigationItem.backBarButtonItem =   [[UIBarButtonItem alloc]initWithImage:[[UIImage imageNamed:@"navigation-back"]imageWithRenderingMode:(UIImageRenderingModeAlwaysTemplate) ] style:(UIBarButtonItemStyleDone) target:self action:@selector(leftBarBtnClicked:)];
     self.navigationItem.backBarButtonItem.title = @"";
-    self.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationBar.tintColor = [UIColor grayColor];
 
 }
 -(void)leftBarBtnClicked:(UIBarButtonItem *)sender

@@ -15,6 +15,8 @@
 		BB0F73161E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0F73151E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m */; };
 		BB3900AB1E49E44A002367C4 /* ThirdSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */; };
 		BB3900EE1E49E9E0002367C4 /* ForthSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */; };
+		BB4C237C1E4D4A66005A1D7F /* YUHYContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C23791E4D4A66005A1D7F /* YUHYContainerViewController.m */; };
+		BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */; };
 		BB5865C11E4895BD00075EC8 /* TabBarPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */; };
 		BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */; };
 		BB9B092B1E4B36CA0078CFA4 /* FirstSectionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092A1E4B36CA0078CFA4 /* FirstSectionNavigationController.m */; };
@@ -416,9 +418,13 @@
 		BBA5D5CC1E4C5B6C00D2CB44 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BBA5D5C51E4C5B6C00D2CB44 /* SVProgressHUD.bundle */; };
 		BBA5D5CD1E4C5B6C00D2CB44 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5C71E4C5B6C00D2CB44 /* SVProgressHUD.m */; };
 		BBA5D5CE1E4C5B6C00D2CB44 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5C91E4C5B6C00D2CB44 /* SVRadialGradientLayer.m */; };
-		BBA5D5F61E4C679900D2CB44 /* EatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5F51E4C679900D2CB44 /* EatTableViewController.m */; };
 		BBA5D5F91E4C762300D2CB44 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */; };
 		BBA5D5FC1E4C76BF00D2CB44 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */; };
+		BBA5D62A1E4C830C00D2CB44 /* EatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D6281E4C830C00D2CB44 /* EatViewController.m */; };
+		BBA5D62B1E4C830C00D2CB44 /* EatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA5D6291E4C830C00D2CB44 /* EatViewController.xib */; };
+		BBA5D6341E4C928A00D2CB44 /* NearPeopleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA5D6321E4C928A00D2CB44 /* NearPeopleTableViewController.m */; };
+		BBA5D6351E4C928A00D2CB44 /* NearPeopleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA5D6331E4C928A00D2CB44 /* NearPeopleTableViewController.xib */; };
+		BBB994AB1E4CC4CB00B471B3 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB994AA1E4CC4CB00B471B3 /* ContainerViewController.m */; };
 		BBFB44C41E2CD67E007A48EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFB44C31E2CD67E007A48EE /* main.m */; };
 		BBFB44C71E2CD67E007A48EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFB44C61E2CD67E007A48EE /* AppDelegate.m */; };
 		BBFB44CF1E2CD67E007A48EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFB44CE1E2CD67E007A48EE /* Assets.xcassets */; };
@@ -449,6 +455,10 @@
 		BB3900AC1E49E560002367C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BB3900EC1E49E9E0002367C4 /* ForthSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForthSectionCell.h; sourceTree = "<group>"; };
 		BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForthSectionCell.m; sourceTree = "<group>"; };
+		BB4C23781E4D4A66005A1D7F /* YUHYContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUHYContainerViewController.h; sourceTree = "<group>"; };
+		BB4C23791E4D4A66005A1D7F /* YUHYContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUHYContainerViewController.m; sourceTree = "<group>"; };
+		BB4C237A1E4D4A66005A1D7F /* YUHYScrollMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUHYScrollMenuView.h; sourceTree = "<group>"; };
+		BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUHYScrollMenuView.m; sourceTree = "<group>"; };
 		BB5865BF1E4895BD00075EC8 /* TabBarPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarPhoto.h; sourceTree = "<group>"; };
 		BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarPhoto.m; sourceTree = "<group>"; };
 		BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton_leftTitleRightImage.h; sourceTree = "<group>"; };
@@ -879,12 +889,18 @@
 		BBA5D5C71E4C5B6C00D2CB44 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		BBA5D5C81E4C5B6C00D2CB44 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		BBA5D5C91E4C5B6C00D2CB44 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		BBA5D5F41E4C679900D2CB44 /* EatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatTableViewController.h; sourceTree = "<group>"; };
-		BBA5D5F51E4C679900D2CB44 /* EatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatTableViewController.m; sourceTree = "<group>"; };
 		BBA5D5F71E4C762300D2CB44 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		BBA5D5F81E4C762300D2CB44 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		BBA5D5FA1E4C76BF00D2CB44 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		BBA5D5FB1E4C76BF00D2CB44 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		BBA5D6271E4C830C00D2CB44 /* EatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatViewController.h; sourceTree = "<group>"; };
+		BBA5D6281E4C830C00D2CB44 /* EatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatViewController.m; sourceTree = "<group>"; };
+		BBA5D6291E4C830C00D2CB44 /* EatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EatViewController.xib; sourceTree = "<group>"; };
+		BBA5D6311E4C928A00D2CB44 /* NearPeopleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearPeopleTableViewController.h; sourceTree = "<group>"; };
+		BBA5D6321E4C928A00D2CB44 /* NearPeopleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearPeopleTableViewController.m; sourceTree = "<group>"; };
+		BBA5D6331E4C928A00D2CB44 /* NearPeopleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearPeopleTableViewController.xib; sourceTree = "<group>"; };
+		BBB994A91E4CC4CB00B471B3 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		BBB994AA1E4CC4CB00B471B3 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
 		BBFB44BF1E2CD67E007A48EE /* PlayToWhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayToWhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBFB44C31E2CD67E007A48EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBFB44C51E2CD67E007A48EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1294,9 +1310,22 @@
 			name = image;
 			sourceTree = "<group>";
 		};
+		BB4C23771E4D4A66005A1D7F /* YUHYContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB4C23781E4D4A66005A1D7F /* YUHYContainerViewController.h */,
+				BB4C23791E4D4A66005A1D7F /* YUHYContainerViewController.m */,
+				BB4C237A1E4D4A66005A1D7F /* YUHYScrollMenuView.h */,
+				BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */,
+			);
+			name = YUHYContainerViewController;
+			path = YSLContainerViewController;
+			sourceTree = "<group>";
+		};
 		BBA5D57B1E4C54EB00D2CB44 /* 三方库 */ = {
 			isa = PBXGroup;
 			children = (
+				BB4C23771E4D4A66005A1D7F /* YUHYContainerViewController */,
 				BBA5D5BF1E4C5B6C00D2CB44 /* SVProgressHUD */,
 				BBA5D57C1E4C55A300D2CB44 /* MJRefresh */,
 			);
@@ -1433,8 +1462,39 @@
 		BBA5D5F31E4C671600D2CB44 /* SecondView */ = {
 			isa = PBXGroup;
 			children = (
-				BBA5D5F41E4C679900D2CB44 /* EatTableViewController.h */,
-				BBA5D5F51E4C679900D2CB44 /* EatTableViewController.m */,
+				BBA5D6271E4C830C00D2CB44 /* EatViewController.h */,
+				BBA5D6281E4C830C00D2CB44 /* EatViewController.m */,
+				BBA5D6291E4C830C00D2CB44 /* EatViewController.xib */,
+				BBA5D6311E4C928A00D2CB44 /* NearPeopleTableViewController.h */,
+				BBA5D6321E4C928A00D2CB44 /* NearPeopleTableViewController.m */,
+				BBA5D6331E4C928A00D2CB44 /* NearPeopleTableViewController.xib */,
+				BBB994A91E4CC4CB00B471B3 /* ContainerViewController.h */,
+				BBB994AA1E4CC4CB00B471B3 /* ContainerViewController.m */,
+			);
+			name = SecondView;
+			sourceTree = "<group>";
+		};
+		BBA5D62C1E4C90CA00D2CB44 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				BBFB44F91E2CEFBD007A48EE /* FirstSectionCell.h */,
+				BBFB44FA1E2CEFBD007A48EE /* FirstSectionCell.m */,
+				BBFB44FC1E2CF1C5007A48EE /* FirstSectionCell.xib */,
+				BB0F72461E2DB42700ECE3F1 /* SecondSectionCell.h */,
+				BB0F72471E2DB42700ECE3F1 /* SecondSectionCell.m */,
+				BB3900A91E49E44A002367C4 /* ThirdSectionCell.h */,
+				BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */,
+				BB3900EC1E49E9E0002367C4 /* ForthSectionCell.h */,
+				BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */,
+				BB0F73141E2E2DFE00ECE3F1 /* CustomHeaderSectionView.h */,
+				BB0F73151E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m */,
+			);
+			name = FirstView;
+			sourceTree = "<group>";
+		};
+		BBA5D62D1E4C90E400D2CB44 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = SecondView;
 			sourceTree = "<group>";
@@ -1542,17 +1602,8 @@
 		BBFB44F71E2CEF88007A48EE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BBFB44F91E2CEFBD007A48EE /* FirstSectionCell.h */,
-				BBFB44FA1E2CEFBD007A48EE /* FirstSectionCell.m */,
-				BBFB44FC1E2CF1C5007A48EE /* FirstSectionCell.xib */,
-				BB0F72461E2DB42700ECE3F1 /* SecondSectionCell.h */,
-				BB0F72471E2DB42700ECE3F1 /* SecondSectionCell.m */,
-				BB3900A91E49E44A002367C4 /* ThirdSectionCell.h */,
-				BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */,
-				BB3900EC1E49E9E0002367C4 /* ForthSectionCell.h */,
-				BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */,
-				BB0F73141E2E2DFE00ECE3F1 /* CustomHeaderSectionView.h */,
-				BB0F73151E2E2DFE00ECE3F1 /* CustomHeaderSectionView.m */,
+				BBA5D62C1E4C90CA00D2CB44 /* FirstView */,
+				BBA5D62D1E4C90E400D2CB44 /* SecondView */,
 				BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */,
 				BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */,
 			);
@@ -1658,6 +1709,7 @@
 				BBA5D4951E4C29F500D2CB44 /* hot@2x.png in Resources */,
 				BBA5D45B1E4C29F400D2CB44 /* edit-voice@2x.png in Resources */,
 				BBA5D4461E4C29F400D2CB44 /* DetailPageTabBarIconStared@3x.png in Resources */,
+				BBA5D6351E4C928A00D2CB44 /* NearPeopleTableViewController.xib in Resources */,
 				BBA5D4CA1E4C29F500D2CB44 /* pick-photo-check@2x.png in Resources */,
 				BBA5D5211E4C29F500D2CB44 /* tags-bg@2x.png in Resources */,
 				BBA5D50D1E4C29F500D2CB44 /* QQ_F@2x.png in Resources */,
@@ -1786,6 +1838,7 @@
 				BBA5D4A51E4C29F500D2CB44 /* LoginPageCheckBoxUncheck@2x.png in Resources */,
 				BBA5D47D1E4C29F400D2CB44 /* hint-post@2x.png in Resources */,
 				BBA5D5381E4C29F500D2CB44 /* wechat_F@2x.png in Resources */,
+				BBA5D62B1E4C830C00D2CB44 /* EatViewController.xib in Resources */,
 				BBA5D43D1E4C29F400D2CB44 /* DetailPageTabBarIconComment@2x.png in Resources */,
 				BBA5D4201E4C29F400D2CB44 /* card-share-wechat@3x.png in Resources */,
 				BBA5D4C81E4C29F500D2CB44 /* pick-list-arrow-rignt@2x.png in Resources */,
@@ -2017,6 +2070,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFB44C71E2CD67E007A48EE /* AppDelegate.m in Sources */,
+				BBB994AB1E4CC4CB00B471B3 /* ContainerViewController.m in Sources */,
 				BB0F72401E2DA8D000ECE3F1 /* PlayToWhereViewController.m in Sources */,
 				BBFB44EF1E2CD9D5007A48EE /* MeTableViewController.m in Sources */,
 				BB0F723C1E2DA48C00ECE3F1 /* MainTableViewController.m in Sources */,
@@ -2035,11 +2089,14 @@
 				BBFB44FB1E2CEFBD007A48EE /* FirstSectionCell.m in Sources */,
 				BBA5D5B01E4C55A300D2CB44 /* MJRefreshAutoGifFooter.m in Sources */,
 				BBA5D5B41E4C55A300D2CB44 /* MJRefreshBackNormalFooter.m in Sources */,
+				BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */,
 				BBA5D5BD1E4C55A300D2CB44 /* UIScrollView+MJRefresh.m in Sources */,
 				BBA5D5CE1E4C5B6C00D2CB44 /* SVRadialGradientLayer.m in Sources */,
 				BBA5D5AD1E4C55A300D2CB44 /* MJRefreshComponent.m in Sources */,
 				BBFB44E51E2CD939007A48EE /* ConcernTableViewController.m in Sources */,
+				BB4C237C1E4D4A66005A1D7F /* YUHYContainerViewController.m in Sources */,
 				BBA5D5BC1E4C55A300D2CB44 /* UIScrollView+MJExtension.m in Sources */,
+				BBA5D6341E4C928A00D2CB44 /* NearPeopleTableViewController.m in Sources */,
 				BB3900EE1E49E9E0002367C4 /* ForthSectionCell.m in Sources */,
 				BBA5D5AC1E4C55A300D2CB44 /* MJRefreshBackFooter.m in Sources */,
 				BBA5D5B51E4C55A300D2CB44 /* MJRefreshBackStateFooter.m in Sources */,
@@ -2054,9 +2111,9 @@
 				BBFB44C41E2CD67E007A48EE /* main.m in Sources */,
 				BBA5D5AE1E4C55A300D2CB44 /* MJRefreshFooter.m in Sources */,
 				BBA5D5F91E4C762300D2CB44 /* UIBarButtonItem+Extension.m in Sources */,
-				BBA5D5F61E4C679900D2CB44 /* EatTableViewController.m in Sources */,
 				BBA5D5CD1E4C5B6C00D2CB44 /* SVProgressHUD.m in Sources */,
 				BBA5D5AF1E4C55A300D2CB44 /* MJRefreshHeader.m in Sources */,
+				BBA5D62A1E4C830C00D2CB44 /* EatViewController.m in Sources */,
 				BBA5D5B81E4C55A300D2CB44 /* MJRefreshStateHeader.m in Sources */,
 				BBA5D5CA1E4C5B6C00D2CB44 /* SVIndefiniteAnimatedView.m in Sources */,
 			);
