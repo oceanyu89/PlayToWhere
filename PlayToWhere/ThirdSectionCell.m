@@ -14,8 +14,8 @@
 {
     ThirdSectionCell *cell = [tableview dequeueReusableCellWithIdentifier:@"Cell"];
     if (cell ==nil) {
-        cell = [[ThirdSectionCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"Cell"];
-        cell.backgroundColor = [UIColor redColor];
+        cell = [[NSBundle mainBundle]loadNibNamed:@"ThirdSectionCell" owner:nil options:nil].firstObject;
+//        cell.backgroundColor = [UIColor redColor];
     }
     return cell;
 }

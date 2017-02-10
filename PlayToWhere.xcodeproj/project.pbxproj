@@ -19,6 +19,10 @@
 		BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4C237B1E4D4A66005A1D7F /* YUHYScrollMenuView.m */; };
 		BB5865C11E4895BD00075EC8 /* TabBarPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */; };
 		BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */; };
+		BB8E4AB21E4D690C00C78C04 /* SecondSectionXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AB01E4D690C00C78C04 /* SecondSectionXibCell.m */; };
+		BB8E4AB31E4D690C00C78C04 /* SecondSectionXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */; };
+		BB8E4AB61E4D6C2700C78C04 /* buttonAndImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */; };
+		BB8E4AE51E4DB6A000C78C04 /* ThirdSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */; };
 		BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */; };
 		BB9B092B1E4B36CA0078CFA4 /* FirstSectionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092A1E4B36CA0078CFA4 /* FirstSectionNavigationController.m */; };
 		BB9B092F1E4B3BD90078CFA4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B092D1E4B3BD90078CFA4 /* SearchViewController.m */; };
@@ -464,6 +468,12 @@
 		BB5865C01E4895BD00075EC8 /* TabBarPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarPhoto.m; sourceTree = "<group>"; };
 		BB8E4AAB1E4D5FF100C78C04 /* UIViewController+PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentViewController.h"; sourceTree = "<group>"; };
 		BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentViewController.m"; sourceTree = "<group>"; };
+		BB8E4AAF1E4D690C00C78C04 /* SecondSectionXibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondSectionXibCell.h; sourceTree = "<group>"; };
+		BB8E4AB01E4D690C00C78C04 /* SecondSectionXibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondSectionXibCell.m; sourceTree = "<group>"; };
+		BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondSectionXibCell.xib; sourceTree = "<group>"; };
+		BB8E4AB41E4D6C2700C78C04 /* buttonAndImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buttonAndImageView.h; sourceTree = "<group>"; };
+		BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = buttonAndImageView.m; sourceTree = "<group>"; };
+		BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdSectionCell.xib; sourceTree = "<group>"; };
 		BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton_leftTitleRightImage.h; sourceTree = "<group>"; };
 		BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton_leftTitleRightImage.m; sourceTree = "<group>"; };
 		BB9B09291E4B36CA0078CFA4 /* FirstSectionNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstSectionNavigationController.h; sourceTree = "<group>"; };
@@ -1340,6 +1350,24 @@
 			name = Catogory;
 			sourceTree = "<group>";
 		};
+		BB8E4AB91E4D6F0200C78C04 /* temp */ = {
+			isa = PBXGroup;
+			children = (
+				BB0F72461E2DB42700ECE3F1 /* SecondSectionCell.h */,
+				BB0F72471E2DB42700ECE3F1 /* SecondSectionCell.m */,
+			);
+			name = temp;
+			sourceTree = "<group>";
+		};
+		BB8E4ADD1E4D9E8600C78C04 /* CustomAnyMore */ = {
+			isa = PBXGroup;
+			children = (
+				BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */,
+				BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */,
+			);
+			name = CustomAnyMore;
+			sourceTree = "<group>";
+		};
 		BBA5D57B1E4C54EB00D2CB44 /* 三方库 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1495,13 +1523,18 @@
 		BBA5D62C1E4C90CA00D2CB44 /* FirstView */ = {
 			isa = PBXGroup;
 			children = (
+				BB8E4AB91E4D6F0200C78C04 /* temp */,
 				BBFB44F91E2CEFBD007A48EE /* FirstSectionCell.h */,
 				BBFB44FA1E2CEFBD007A48EE /* FirstSectionCell.m */,
 				BBFB44FC1E2CF1C5007A48EE /* FirstSectionCell.xib */,
-				BB0F72461E2DB42700ECE3F1 /* SecondSectionCell.h */,
-				BB0F72471E2DB42700ECE3F1 /* SecondSectionCell.m */,
+				BB8E4AAF1E4D690C00C78C04 /* SecondSectionXibCell.h */,
+				BB8E4AB01E4D690C00C78C04 /* SecondSectionXibCell.m */,
+				BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */,
+				BB8E4AB41E4D6C2700C78C04 /* buttonAndImageView.h */,
+				BB8E4AB51E4D6C2700C78C04 /* buttonAndImageView.m */,
 				BB3900A91E49E44A002367C4 /* ThirdSectionCell.h */,
 				BB3900AA1E49E44A002367C4 /* ThirdSectionCell.m */,
+				BB8E4AE41E4DB6A000C78C04 /* ThirdSectionCell.xib */,
 				BB3900EC1E49E9E0002367C4 /* ForthSectionCell.h */,
 				BB3900ED1E49E9E0002367C4 /* ForthSectionCell.m */,
 				BB0F73141E2E2DFE00ECE3F1 /* CustomHeaderSectionView.h */,
@@ -1540,6 +1573,7 @@
 				BBFB44E01E2CD8CD007A48EE /* 目的地 */,
 				BBFB44DF1E2CD8C5007A48EE /* 关注 */,
 				BBFB44DE1E2CD8B6007A48EE /* 哪好玩 */,
+				BB8E4ADD1E4D9E8600C78C04 /* CustomAnyMore */,
 				BB8E4AAE1E4D647D00C78C04 /* Catogory */,
 				BBFB44C51E2CD67E007A48EE /* AppDelegate.h */,
 				BBFB44C61E2CD67E007A48EE /* AppDelegate.m */,
@@ -1617,8 +1651,6 @@
 			children = (
 				BBA5D62C1E4C90CA00D2CB44 /* FirstView */,
 				BBA5D62D1E4C90E400D2CB44 /* SecondView */,
-				BB9B089A1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.h */,
-				BB9B089B1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1775,6 +1807,7 @@
 				BBA5D4141E4C29F400D2CB44 /* card-location@3x.png in Resources */,
 				BBA5D50A1E4C29F500D2CB44 /* publish-wechat-color@3x.png in Resources */,
 				BBA5D3EC1E4C29F400D2CB44 /* campage-photo-btn@3x.png in Resources */,
+				BB8E4AE51E4DB6A000C78C04 /* ThirdSectionCell.xib in Resources */,
 				BBA5D4DB1E4C29F500D2CB44 /* profile-edit-name@3x.png in Resources */,
 				BBA5D3C51E4C29F400D2CB44 /* action-message@2x.png in Resources */,
 				BBA5D40F1E4C29F400D2CB44 /* card-arrow-rignt@2x.png in Resources */,
@@ -1864,6 +1897,7 @@
 				BBA5D4B81E4C29F500D2CB44 /* new-red@2x.png in Resources */,
 				BBA5D4511E4C29F400D2CB44 /* edit-sticker-focus@2x.png in Resources */,
 				BBA5D43C1E4C29F400D2CB44 /* DetailPageRightExpandIcon@3x.png in Resources */,
+				BB8E4AB31E4D690C00C78C04 /* SecondSectionXibCell.xib in Resources */,
 				BBA5D4AF1E4C29F500D2CB44 /* map-location@3x.png in Resources */,
 				BBA5D4C31E4C29F500D2CB44 /* photos-flag@3x.png in Resources */,
 				BBA5D3EA1E4C29F400D2CB44 /* campage-horizon-btn@3x.png in Resources */,
@@ -2101,6 +2135,7 @@
 				BBA5D5B21E4C55A300D2CB44 /* MJRefreshAutoStateFooter.m in Sources */,
 				BBFB44FB1E2CEFBD007A48EE /* FirstSectionCell.m in Sources */,
 				BBA5D5B01E4C55A300D2CB44 /* MJRefreshAutoGifFooter.m in Sources */,
+				BB8E4AB21E4D690C00C78C04 /* SecondSectionXibCell.m in Sources */,
 				BBA5D5B41E4C55A300D2CB44 /* MJRefreshBackNormalFooter.m in Sources */,
 				BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */,
 				BBA5D5BD1E4C55A300D2CB44 /* UIScrollView+MJRefresh.m in Sources */,
@@ -2121,6 +2156,7 @@
 				BBA5D5CB1E4C5B6C00D2CB44 /* SVProgressAnimatedView.m in Sources */,
 				BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */,
 				BBA5D5AB1E4C55A300D2CB44 /* MJRefreshAutoFooter.m in Sources */,
+				BB8E4AB61E4D6C2700C78C04 /* buttonAndImageView.m in Sources */,
 				BBA5D5BE1E4C55A300D2CB44 /* UIView+MJExtension.m in Sources */,
 				BBFB44C41E2CD67E007A48EE /* main.m in Sources */,
 				BBA5D5AE1E4C55A300D2CB44 /* MJRefreshFooter.m in Sources */,
