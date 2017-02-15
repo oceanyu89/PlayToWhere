@@ -10,7 +10,5 @@
 
 @interface buttonAndImageView : UIView
 
-@property (nonatomic,copy) NSString *titleLabelString;
-@property (nonatomic,copy) NSString *noteLabelString;
-
+-(void)createSomeView:(NSString*)imageName andTitle:(NSString *)title andNote:(NSString *)note;
 @end

@@ -2,7 +2,7 @@
 //  ForthSectionCell.m
 //  PlayToWhere
 //
-//  Created by ocean.yu on 2017/2/7.
+//  Created by ocean.yu on 2017/2/13.
 //  Copyright © 2017年 ocean.yu. All rights reserved.
 //
 
@@ -12,11 +12,9 @@
 
 +(instancetype)ForthSectionCellForMain:(UITableView *)tableview
 {
-    ForthSectionCell *cell = [tableview dequeueReusableCellWithIdentifier:@"Cell"];
-    if (cell ==nil) {
-        cell = [[ForthSectionCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"Cell"];
-        cell.backgroundColor = [UIColor greenColor];
-    }
+    
+    ForthSectionCell *cell =[[NSBundle mainBundle] loadNibNamed:@"ForthSectionCell" owner:nil options:nil].firstObject;
+    
     return cell;
 }
 

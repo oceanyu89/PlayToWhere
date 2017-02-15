@@ -72,11 +72,12 @@
 
     }
     if (section ==3) {
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, tableview.frame.size.width, 40)];
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(20, 0, tableview.frame.size.width, 30)];
         label.text = @"精选专题";
         
         label.textColor = [UIColor redColor];
         label.font = kFont(12);
+        view.backgroundColor = [UIColor whiteColor];
         [view addSubview:label];
         
     }

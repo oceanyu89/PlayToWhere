@@ -29,7 +29,7 @@
      *  kCATransitionReveal     底部显示
      *  kCATransitionPush       推出
      */
-    animation.type = kCATransitionPush;
+    animation.type = kCATransitionMoveIn;
     
     //PS：type 更多效果请 搜索： CATransition
     /**  subtype：出现的方向

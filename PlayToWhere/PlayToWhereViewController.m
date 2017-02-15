@@ -41,6 +41,7 @@
     UITabBarController *tab = [[UITabBarController alloc]init];
     // 哪好玩
     MainTableViewController*mainVC =  [[MainTableViewController alloc]initWithNibName:@"MainTableViewController" bundle:nil];
+//    MainTableViewController*mainVC =  [[MainTableViewController alloc]initWithStyle:(UITableViewStyleGrouped)];
         FirstSectionNavigationController *navi1 =[[FirstSectionNavigationController alloc]initWithRootViewController:mainVC];
     mainVC.navigationItem.title = @"";
     //关注

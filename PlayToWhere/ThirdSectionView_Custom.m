@@ -7,7 +7,10 @@
 //
 
 #import "ThirdSectionView_Custom.h"
-
+#import "listSection.h"
+@interface ThirdSectionView_Custom()
+@property(nonatomic,strong)CustomCellWithAcessoryImage *cell ;
+@end
 @implementation ThirdSectionView_Custom
 
 
@@ -41,7 +44,7 @@
         [self addSubview:note];
         [self addSubview:btn];
         [self addSubview:tableVIew];
-
+        self.userInteractionEnabled = YES;
         tableVIew.delegate = self;
         tableVIew.dataSource = self;
     }
@@ -50,7 +53,7 @@
 
 -(void)moreBtnClicked:(UIButton * )sender
 {
-    
+    [self.delegate clickMoreButton];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -71,14 +74,25 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomCellWithAcessoryImage *cell = [CustomCellWithAcessoryImage initWithCustomWithAccessoryView:@"" andTitle:@"测试" andDetail:@"测试" andAccessoryImageName:@""];
-
+        listSection*lists =[[listSection alloc]init];
+        [lists setValuesForKeysWithDictionary:self.lists[indexPath.row]];
+        User *user =[[User alloc]init];
+        [user setValuesForKeysWithDictionary:(NSDictionary*)lists.user];
+        Topic *topic = [Topic new];
+        [topic setValuesForKeysWithDictionary:(NSDictionary*)lists.topic];
+    
+        CustomCellWithAcessoryImage *cell = [CustomCellWithAcessoryImage initWithCustomWithAccessoryView: lists.icon_url andTitle: lists.title andDetail:[NSString stringWithFormat:@"%ld条内容" ,(long)topic.total] andAccessoryImageName:user.headimg];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
     return cell;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CustomCellWithAcessoryImage *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *title = cell.textLabel.text;
+    [self.delegate didSelectCellForRowIndex:tableView andIndexPath:indexPath andTitle:title];
+}
 
 
 /*
