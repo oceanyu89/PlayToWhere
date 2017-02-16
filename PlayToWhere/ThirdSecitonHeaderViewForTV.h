@@ -10,4 +10,9 @@
 
 @interface ThirdSecitonHeaderViewForTV : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UILabel *attentionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *attentionBtn;
 @end

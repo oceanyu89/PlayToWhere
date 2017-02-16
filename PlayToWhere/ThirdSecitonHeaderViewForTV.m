@@ -8,7 +8,14 @@
 
 #import "ThirdSecitonHeaderViewForTV.h"
 
+@interface ThirdSecitonHeaderViewForTV()
+
+
+@end
 @implementation ThirdSecitonHeaderViewForTV
+- (IBAction)action:(UIButton *)sender {
+    
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

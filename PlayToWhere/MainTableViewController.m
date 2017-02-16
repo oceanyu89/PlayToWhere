@@ -262,6 +262,7 @@ static NSString * const identifier = @"myCell";
 {
     ThirdSectionSonVC *sonVC = [[ThirdSectionSonVC alloc]init];
     [self presentViewController:sonVC animated:YES];
+//    [self.navigationController pushViewController:sonVC animated:YES];
 }
 //cell的点击事件
 -(void)didSelectCellForRowIndex:(UITableView *)tableView andIndexPath:(NSIndexPath *)indexPath andTitle:(NSString *)title
