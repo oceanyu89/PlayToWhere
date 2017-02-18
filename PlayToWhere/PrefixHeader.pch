@@ -30,7 +30,6 @@
 #import "buttonAndImageView.h"
 #import "ThirdSectionView_Custom.h"
 #import "CustomCellWithAcessoryImage.h"
-#import "ForthSectionContentView.h"
 #import "ForthSectionCell.h"
 #import "AFNetworking.h"
 #import "YYModel.h"
@@ -38,9 +37,8 @@
 #import "GetHTTPData.h"
 #import "VCCopyFromNV.h"
 #import "Masonry.h"
-
-
-
+#import "UIImageView+AFNetworking.h"
+#import "UIButton+AFNetworking.h"
 
 
 

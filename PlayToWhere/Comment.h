@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Comments.h"
 @interface Comment : NSObject
 @property (nonatomic,assign) NSInteger total;
 @property(nonatomic,strong)NSArray *comments;

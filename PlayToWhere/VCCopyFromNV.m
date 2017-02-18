@@ -67,6 +67,8 @@
     [self backBtn];
     [self titleLabel];
     [self tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {

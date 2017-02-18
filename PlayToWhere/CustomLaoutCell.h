@@ -13,11 +13,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *userDate;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *contentImage;
 +(instancetype)getCustomLayoutCell:(UITableView*)tableView andIndexPath:(NSIndexPath *)indexPath;
 @property(nonatomic,strong)NewTopic *topic;
 @property (weak, nonatomic) IBOutlet UIView *MyViewForAddImageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *button2CS;
+
+
 
 @end

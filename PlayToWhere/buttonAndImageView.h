@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class buttonAndImageView;
+@protocol buttonAndImageViewDelegate <NSObject>
 
+-(void)viewClicked:(buttonAndImageView*)buttonAndImageView;
+
+@end
 @interface buttonAndImageView : UIView
 
 -(void)createSomeView:(NSString*)imageName andTitle:(NSString *)title andNote:(NSString *)note;
+
+@property (nonatomic,weak) id<buttonAndImageViewDelegate> delegate;
 @end

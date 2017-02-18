@@ -23,15 +23,11 @@
     self.userInteractionEnabled = YES;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = self.bounds;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSURL *url = [NSURL URLWithString:imageName];
-        NSData *data = [NSData dataWithContentsOfURL:url];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [btn setBackgroundImage:[UIImage imageWithData:data]forState:(UIControlStateNormal)];
-        });
-    });
 
+    [btn setBackgroundImageForState:UIControlStateNormal withURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
+    
     [btn setTitle:title forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(presentToNextViewWithClicked:) forControlEvents:UIControlEventTouchUpInside];
     btn.layer.cornerRadius = 12*SCREEN_WIDTH_RATIO;
     btn.clipsToBounds = YES;
 
@@ -52,9 +48,15 @@
     noteLabel.textColor = [UIColor whiteColor];
     noteLabel.backgroundColor = [UIColor redColor];
     [self addSubview:noteLabel];
-    
-    
+
 }
+
+#pragma mark -单击手势事件
+-(void)presentToNextViewWithClicked:(UIButton *)sender
+{
+    [self.delegate viewClicked:self];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

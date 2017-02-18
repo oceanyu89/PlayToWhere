@@ -12,17 +12,47 @@
 #import "FirstCell.h"
 #import "CustomLaoutCell.h"
 #import "SecondSectionWithTopic.h"
+#import "CustomCommentCell.h"
+
 @interface ThirdSectionDetail ()
 @property(nonatomic,strong)UIButton *TopRightBtn;
 @property(nonatomic,strong)SecondSectionWithoutList *model1;
 @property(nonatomic,strong)SecondSectionWithTopic *model2;
+@property(nonatomic,strong)SecondSectionWithTopic *modeltemp;
 @property(nonatomic,strong)listSection *list;
 @property(nonatomic,strong)ThirdSecitonHeaderViewForTV *headerView;
 
 @property (nonatomic, strong)  CustomLaoutCell *customCell;
+@property(nonatomic,strong)NewTopic *topic;
+@property(nonatomic,strong)Comment *comment;
+@property(nonatomic,strong)NSMutableArray *topics;
 @end
 
 @implementation ThirdSectionDetail
+
+
+
+-(NSMutableArray *)topics
+{
+    if (_topics==nil) {
+        _topics = [NSMutableArray array];
+    }
+    return _topics;
+}
+-(NewTopic *)topic
+{
+    if (_topic==nil) {
+        _topic = [NewTopic new];
+    }
+    return _topic;
+}
+-(Comment *)comment
+{
+    if (_comment==nil) {
+        _comment = [Comment new];
+    }
+    return _comment;
+}
 -(UIView *)headerView
 {
     if (_headerView==nil) {
@@ -59,18 +89,27 @@
     [self TopRightBtn];
     self.titleLabel.text = self.title;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData) ];
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     [self beginLoadData];
     [self headerView];
 
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-//    [self.tableView registerNib:[UINib nibWithNibName:@"CustomLaoutCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"myCell"];
-    
     self.tableView.estimatedRowHeight = 400;  //  随便设个不那么离谱的值
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    
+   self.tableView.height = SCREEN_HEIGHT-64;
+    self.tableView.mj_footer.hidden = YES;
 }
-
+#pragma mark -控制表尾刷新
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    // 当最后一个cell完全显示在眼前时，contentOffset的y值
+    CGFloat judgeOffsetY = scrollView.contentSize.height + scrollView.contentInset.bottom - scrollView.height - self.tableView.tableFooterView.height;
+    if (offsetY >= judgeOffsetY) { // 最后一个cell完全进入视野范围内
+        // 显示footer
+        self.tableView.mj_footer.hidden = NO;
+        
+    }
+}
 
 #pragma mark -刷新加载数据
 -(void)loadNewData
@@ -78,6 +117,34 @@
     [self.tableView.mj_header beginRefreshing];
      [self dispatchLoadNewData];
 }
+#pragma mark - 加载更多数据
+-(void)loadMoreData
+{
+//        [self.tableView.mj_footer beginRefreshing];
+    NSInteger pos = self.model2.data.pos;
+    NSString*urlString = @"http://nahaowan.com/api/v1/group/topics?";
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"group_id"] = @"2384";
+    parameters[@"offset"] = @(pos).stringValue;
+    
+    AFHTTPSessionManager *manager = [GetHTTPData manager];
+    [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (responseObject) {
+            
+            self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
+//            self.topics = [self.modeltemp.data.topics mutableCopy];
+            [self.topics addObjectsFromArray:self.model2.data.topics];
+            [SVProgressHUD dismiss];
+            [self.tableView reloadData];
+           [self.tableView.mj_footer endRefreshing];
+         self.tableView.mj_footer.hidden = YES;
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+
+}
+
 #pragma mark -开线程加载数据
 -(void)beginLoadData
 {
@@ -123,33 +190,66 @@
         self.headerView.attentionLabel.text = [NSString stringWithFormat:@"%ld条内容",(long)self.model1.data.watch.total];
     }else if ( tag==2) {
         self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
-        
+        self.topics = [self.model2.data.topics mutableCopy];
     }
     
 }
 
-
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+      return self.topics.count;
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.model2.data.topics.count;
+    if (section==0) {
+        return 1;
+    }
+    NewTopic* topic = [NewTopic new];
+    [topic setValuesForKeysWithDictionary:self.topics[section-1]];
+    [self.comment setValuesForKeysWithDictionary:(NSDictionary *)topic.comment];
+    if(self.comment.total>0)
+    {
+        return 2;
+    }
+    
+    return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 1;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 10;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row==0) {
+    if (indexPath.section==0) {
         FirstCell *cell = [FirstCell getFirstCell:tableView andImageName:self.model1.data.user.headimg andTitle:self.model1.data.user.username];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
+
+
+     [self.topic setValuesForKeysWithDictionary:self.topics[indexPath.section-1]];
+    Comment *comment = [Comment new];
+    [comment setValuesForKeysWithDictionary:(NSDictionary *)self.topic.comment];
+    if (indexPath.row==0) {
         CustomLaoutCell *cell = [CustomLaoutCell getCustomLayoutCell:tableView andIndexPath:(NSIndexPath *)indexPath];
-//        CustomLaoutCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
-        NewTopic *topic = [NewTopic new];
-        [topic setValuesForKeysWithDictionary:self.model2.data.topics[indexPath.row-1]];
-        cell.topic = topic;
+       
+        cell.topic = self.topic;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
+    }
+    else
+    {
+        CustomCommentCell *cell = [CustomCommentCell getCustomLayoutCell:tableView andIndexPath:indexPath];
+        cell.comment = comment;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
 
+    
 }
-
-
 
 @end

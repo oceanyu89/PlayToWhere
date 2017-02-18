@@ -14,9 +14,10 @@
 #import "LastSection_model.h"
 #import "ThirdSectionSonVC.h"
 #import "ThirdSectionDetail.h"
+#import "DetailVC.h"
 
 static NSString * const identifier = @"myCell";
-@interface MainTableViewController ()<FirstSectionCellDelegate,ThirdSectionView_CustomDelegate>
+@interface MainTableViewController ()<FirstSectionCellDelegate,ThirdSectionView_CustomDelegate,buttonAndImageViewDelegate>
 @property(nonatomic,strong)FirstSectionCell *cell;
 @property(nonatomic,strong)SectionTwoToInteresting *model1;
 @property(nonatomic,strong)SectionTwoToInteresting *model2;
@@ -141,7 +142,12 @@ static NSString * const identifier = @"myCell";
     }
         return 1;
 }
-
+#pragma mark -单击手势事件
+-(void)viewClicked:(buttonAndImageView *)buttonAndImageView
+{
+    DetailVC *detailVC = [DetailVC new];
+    [self presentViewController:detailVC animated:YES completion:nil];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
@@ -161,7 +167,7 @@ static NSString * const identifier = @"myCell";
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             for (int i=0; i<viewcount; i++) {
                 buttonAndImageView *iv = [[buttonAndImageView alloc]initWithFrame:CGRectMake(10+i*(size+10), 10, size, size)];
-                
+                iv.delegate = self;
                 list_model *lists =[[list_model alloc]init];
                 [lists setValuesForKeysWithDictionary:self.model1.data.list[i]];
                 Haowan *haowan =[[Haowan alloc]init];
@@ -200,14 +206,8 @@ static NSString * const identifier = @"myCell";
             
             image_Model *image = [image_Model new];
             [image setValuesForKeysWithDictionary:(NSDictionary*)datas.image];
-            NSURL *url = [NSURL URLWithString:image.url];
-            NSData *data = [NSData dataWithContentsOfURL:url];
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [cell.showButton setBackgroundImage:[UIImage imageWithData:data] forState:UIControlStateNormal];
-//                [cell setNeedsDisplay];
-                [cell setNeedsLayout];
-            });
+
+            [cell.showButton setBackgroundImageForState:UIControlStateNormal withURL:[NSURL URLWithString:image.url] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
         });
 
         return cell;
