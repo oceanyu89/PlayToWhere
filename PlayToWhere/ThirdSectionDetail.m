@@ -97,6 +97,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
    self.tableView.height = SCREEN_HEIGHT-64;
     self.tableView.mj_footer.hidden = YES;
+    self.tableView.tableHeaderView.height=110;
 }
 #pragma mark -控制表尾刷新
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -120,6 +121,7 @@
 #pragma mark - 加载更多数据
 -(void)loadMoreData
 {
+    
 //        [self.tableView.mj_footer beginRefreshing];
     NSInteger pos = self.model2.data.pos;
     NSString*urlString = @"http://nahaowan.com/api/v1/group/topics?";
@@ -127,21 +129,30 @@
     parameters[@"group_id"] = @"2384";
     parameters[@"offset"] = @(pos).stringValue;
     
-    AFHTTPSessionManager *manager = [GetHTTPData manager];
-    [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (responseObject) {
-            
-            self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
-//            self.topics = [self.modeltemp.data.topics mutableCopy];
-            [self.topics addObjectsFromArray:self.model2.data.topics];
-            [SVProgressHUD dismiss];
-            [self.tableView reloadData];
-           [self.tableView.mj_footer endRefreshing];
-         self.tableView.mj_footer.hidden = YES;
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+    [WebUtile requesHttpData:urlString andSome:parameters andReCallData:^(id obj) {
+        self.model2 = [SecondSectionWithTopic yy_modelWithJSON:obj];
+        //            self.topics = [self.modeltemp.data.topics mutableCopy];
+        [self.topics addObjectsFromArray:self.model2.data.topics];
+        [SVProgressHUD dismiss];
+        [self.tableView reloadData];
+        [self.tableView.mj_footer endRefreshing];
+        self.tableView.mj_footer.hidden = YES;
     }];
+//    AFHTTPSessionManager *manager = [GetHTTPData manager];
+//    [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        if (responseObject) {
+//            
+//            self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
+////            self.topics = [self.modeltemp.data.topics mutableCopy];
+//            [self.topics addObjectsFromArray:self.model2.data.topics];
+//            [SVProgressHUD dismiss];
+//            [self.tableView reloadData];
+//           [self.tableView.mj_footer endRefreshing];
+//         self.tableView.mj_footer.hidden = YES;
+//        }
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
 
 }
 
@@ -156,44 +167,33 @@
 {
 
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self getHttpData:@"http://nahaowan.com/api/v1/group/detail?group_id=2384"andTag:1];
-    });
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self getHttpData:@"http://nahaowan.com/api/v1/group/topics?group_id=2384&offset=0"andTag:2];
-    });
-}
-#pragma mark -网络请求
--(void)getHttpData:(NSString *)urlString andTag:(NSInteger)tag
-{
-    NSDictionary *parameters = [NSDictionary dictionary];
-    AFHTTPSessionManager *manager = [GetHTTPData manager];
-    [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        if (responseObject) {
-            
-            [self sucess:responseObject andTag:tag];
+        NSString *stringURL =@"http://nahaowan.com/api/v1/group/detail?group_id=2384";
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+            self.model1  = [SecondSectionWithoutList yy_modelWithJSON:obj];
+            self.headerView.titleLabel.text = self.model1.data.title;
+            self.headerView.detailLabel.text = self.model1.data.content;
+            self.headerView.contentLabel.text = [NSString stringWithFormat:@"%ld条内容",(long)self.model1.data.topic.total];
+            self.headerView.attentionLabel.text = [NSString stringWithFormat:@"%ld条内容",(long)self.model1.data.watch.total];
             [SVProgressHUD dismiss];
             [self.tableView reloadData];
             [self.tableView.mj_header endRefreshing];
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
+        }];
+    });
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *stringURL =@"http://nahaowan.com/api/v1/group/topics?group_id=2384&offset=0";
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+            self.model2 = [SecondSectionWithTopic yy_modelWithJSON:obj];
+            self.topics = [self.model2.data.topics mutableCopy];
+            [SVProgressHUD dismiss];
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+        }];
+
+    });
 }
 
--(void)sucess:(id)responseObject andTag:(NSInteger)tag
-{
-    if ( tag==1) {
-        self.model1  = [SecondSectionWithoutList yy_modelWithJSON:responseObject];
-        self.headerView.titleLabel.text = self.model1.data.title;
-        self.headerView.detailLabel.text = self.model1.data.content;
-        self.headerView.contentLabel.text = [NSString stringWithFormat:@"%ld条内容",(long)self.model1.data.topic.total];
-        self.headerView.attentionLabel.text = [NSString stringWithFormat:@"%ld条内容",(long)self.model1.data.watch.total];
-    }else if ( tag==2) {
-        self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
-        self.topics = [self.model2.data.topics mutableCopy];
-    }
-    
-}
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

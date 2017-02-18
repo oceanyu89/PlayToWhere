@@ -41,10 +41,11 @@ static NSString * const identifier = @"myCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self beginLoadNewData];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
 
  self.navigationController.navigationBar.barTintColor = [UIColor colorWith255Red:251 green:65 blue:66 alpha:255];
-    [self beginLoadNewData];
+
 }
 
 #pragma mark -下拉刷新操作
@@ -58,79 +59,51 @@ static NSString * const identifier = @"myCell";
 {
     [SVProgressHUD showWithStatus:@"正在加载"];
     [self dispatchGetData];
+//    [self loadNewData];
 }
 
 -(void)dispatchGetData
 {
     //同时开3个线程，来进行并行获取数据
-    //创建一个异步传输队列
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        //耗时操作
-        //section1 数据请求
-        [self getHTTPData:@"" andTag:1];
-    });
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        //耗时操作
-        //section2 数据请求
-        [self getHTTPData:@"" andTag:2];
-    });
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        //section3 数据请求
-        [self getHTTPData:@"" andTag:3];
-    });
-}
-- (void)getHTTPData:(NSString *)getString andTag:(NSInteger)tag
-{
-    // get请求也可以直接将参数放在字典里，AFN会自己讲参数拼接在url的后面，不需要自己凭借
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            //耗时操作
+            //section1 数据请求
+            NSString *stringURL = @"http://nahaowan.com/api/v1/collection/list?list=explore&location=%E6%B7%B1%E5%9C%B3&offset=0";
+            NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+                self.model1  = [SectionTwoToInteresting yy_modelWithJSON:obj];
+                [SVProgressHUD dismiss];
+                [self.tableView reloadData];
+                [self.tableView.mj_header endRefreshing];
+            }];
     
-    //    NSDictionary *param = @{@"user_id":first, @"sale_date":second, @"accessToken":@"e9c0e60318ebd07ec2fe", @"area_type":third};
-    NSDictionary *param =[[NSDictionary alloc]init];
-    NSString *URL =nil;
-    switch (tag) {
-        case 1:
-            URL = @"http://nahaowan.com/api/v1/collection/list?list=explore&location=%E6%B7%B1%E5%9C%B3&offset=0";
-            break;
-        case 2:
-            URL = @"http://nahaowan.com/api/v1/group/list?list=hot&location=%E6%B7%B1%E5%9C%B3";
-            break;
-        case 3:
-            URL = @"http://nahaowan.com/api/v2/haowan/list/ad?geo=22.6481848889781%2C114.210079510808&location=%E6%B7%B1%E5%9C%B3";
-            break;
-    }
-    // 创建请求类
-    AFHTTPSessionManager *manager = [GetHTTPData manager];
-    [manager GET:URL parameters:param progress:^(NSProgress * _Nonnull downloadProgress) {
-        // 这里可以获取到目前数据请求的进度
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        // 请求成功
-        if(responseObject){
-            
-            [self sucess:responseObject  andTag:tag];
-             [SVProgressHUD dismiss];
-            [self.tableView reloadData];
-            [self.tableView.mj_header endRefreshing];
-            
-        } else {
-            
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        // 请求失败
-        
-    }];
-}
-
--(void)sucess:(id)responseObject andTag:(NSInteger)tag
-{
-    if ( tag==1) {
-        self.model1  = [SectionTwoToInteresting yy_modelWithJSON:responseObject];
-    }else if ( tag==2) {
-        self.model2 = [SectionTwoToInteresting yy_modelWithJSON:responseObject];
-    }else if (tag==3) {
-        self.model3 =[LastSection_model yy_modelWithJSON:responseObject];
-    }
+        });
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            //耗时操作
+            //section2 数据请求
+            NSString *stringURL =@"http://nahaowan.com/api/v1/group/list?list=hot&location=%E6%B7%B1%E5%9C%B3";
+             NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+                self.model2 = [SectionTwoToInteresting yy_modelWithJSON:obj];
+                [SVProgressHUD dismiss];
+                [self.tableView reloadData];
+                [self.tableView.mj_header endRefreshing];
+            }];
+        });
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            //section3 数据请求
+            NSString *stringURL =@"http://nahaowan.com/api/v2/haowan/list/ad?geo=22.6481848889781%2C114.210079510808&location=%E6%B7%B1%E5%9C%B3";
+            NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+                self.model3 =[LastSection_model yy_modelWithJSON:obj];
+                [SVProgressHUD dismiss];
+                [self.tableView reloadData];
+                [self.tableView.mj_header endRefreshing];
+            }];
+        });
+    
     
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 4;
@@ -138,7 +111,7 @@ static NSString * const identifier = @"myCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section==3) {
-        return 11;
+        return self.model3.data.count;
     }
         return 1;
 }

@@ -80,39 +80,14 @@
 
 -(void)dispatchGetData
 {
-    //创建一个异步传输队列
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        //耗时操作
-        //section1 数据请求
-        [self getHTTPData:@"http://nahaowan.com/api/v1/group/list?list=explore&location=%E6%B7%B1%E5%9C%B3&pagesize=20" andTag:1];
-    });
-}
-- (void)getHTTPData:(NSString *)getString andTag:(NSInteger)tag
-{
-    // get请求也可以直接将参数放在字典里，AFN会自己讲参数拼接在url的后面，不需要自己凭借
-    
-    //    NSDictionary *param = @{@"user_id":first, @"sale_date":second, @"accessToken":@"e9c0e60318ebd07ec2fe", @"area_type":third};
-    NSDictionary *param =[[NSDictionary alloc]init];
-    // 创建请求类
-    AFHTTPSessionManager *manager = [GetHTTPData manager];
-    [manager GET:getString parameters:param progress:^(NSProgress * _Nonnull downloadProgress) {
-        // 这里可以获取到目前数据请求的进度
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        // 请求成功
-        if(responseObject){
-            
-           self.model =[SectionTwoToInteresting yy_modelWithJSON:responseObject];
-            self.lists = self.model.data.list;
-            [SVProgressHUD dismiss];
-            [self.tableView reloadData];
-            [self.tableView.mj_header endRefreshing];
-            
-        } else {
-            
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        // 请求失败
-        
+    NSString *stringURL =@"http://nahaowan.com/api/v1/group/list?list=explore&location=%E6%B7%B1%E5%9C%B3&pagesize=20";
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+        self.model =[SectionTwoToInteresting yy_modelWithJSON:obj];
+        self.lists = self.model.data.list;
+        [SVProgressHUD dismiss];
+        [self.tableView reloadData];
+        [self.tableView.mj_header endRefreshing];
     }];
 }
 
