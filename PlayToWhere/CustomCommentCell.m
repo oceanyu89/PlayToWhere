@@ -21,9 +21,9 @@
 -(void)setComment:(Comment *)comment
 {
 //    UILabel *allCommet = [[UILabel alloc]initWithFrame:CGRectMake(10, 10, self.contentView.width-10, 20)];
-
+    _comment =comment;
     UILabel *allCommet = [[UILabel alloc]init];
-    allCommet.text = [NSString stringWithFormat:@"查看全部%ld条评论",(long)comment.total];
+    allCommet.text = [NSString stringWithFormat:@"查看全部%ld条评论",(long)_comment.total];
     allCommet.numberOfLines = 0;
     [self.bottomView addSubview:allCommet];
     [allCommet mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -35,11 +35,11 @@
     allCommet.textColor = [UIColor grayColor];
     allCommet.font = kFont(10);
 
-    if (comment.total==1)
+    if (_comment.total==1)
     {
             Comments *comments = [Comments new];
             User *user = [User new];
-            [comments setValuesForKeysWithDictionary:comment.comments[0]];
+            [comments setValuesForKeysWithDictionary:_comment.comments[0]];
 //            UILabel *userCommet = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, self.contentView.width-10, 20)];
             UILabel *userCommet = [[UILabel alloc]init];
             [self.bottomView addSubview:userCommet];
@@ -58,11 +58,11 @@
             userCommet.numberOfLines = 0;
             
         }
-    else if (comment.comments.count>1)
+    else if (_comment.comments.count>1)
         {
             Comments *comments = [Comments new];
             User *user = [User new];
-            [comments setValuesForKeysWithDictionary:comment.comments[1]];
+            [comments setValuesForKeysWithDictionary:_comment.comments[1]];
 //            UILabel *userCommet = [[UILabel alloc]initWithFrame:CGRectMake(10, 30, self.contentView.width-10, 20)];
             UILabel *userCommet = [[UILabel alloc]init];
             [self.bottomView addSubview:userCommet];
@@ -82,7 +82,7 @@
             
             Comments *comments2 = [Comments new];
             User *user2 = [User new];
-            [comments2 setValuesForKeysWithDictionary:comment.comments[0]];
+            [comments2 setValuesForKeysWithDictionary:_comment.comments[0]];
 //            UILabel *userCommet2 = [[UILabel alloc]initWithFrame:CGRectMake(10, 50, self.contentView.width-10, 20)];
             UILabel *userCommet2 = [[UILabel alloc]init];
             [self.bottomView addSubview:userCommet2];

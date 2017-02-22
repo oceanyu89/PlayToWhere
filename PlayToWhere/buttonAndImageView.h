@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "list_model.h"
 @class buttonAndImageView;
 @protocol buttonAndImageViewDelegate <NSObject>
 
--(void)viewClicked:(buttonAndImageView*)buttonAndImageView;
+-(void)viewClicked:(buttonAndImageView*)buttonAndImageView andLists:(list_model*)lists;
 
 @end
 @interface buttonAndImageView : UIView
 
 -(void)createSomeView:(NSString*)imageName andTitle:(NSString *)title andNote:(NSString *)note;
-
+@property(nonatomic,strong)list_model *lists;
 @property (nonatomic,weak) id<buttonAndImageViewDelegate> delegate;
 @end

@@ -15,17 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="385" height="210"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-Q8-jWH">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-action-comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-Q8-jWH">
                     <rect key="frame" x="0.0" y="0.0" width="385" height="150"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="150" id="4EU-ze-J4A"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据测试数据" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDm-5y-ZfF">
-                    <rect key="frame" x="0.0" y="160" width="385" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="biJ-aC-22w"/>
-                    </constraints>
+                    <rect key="frame" x="10" y="160" width="365" height="50"/>
                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -35,13 +33,21 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="TYC-Q8-jWH" secondAttribute="trailing" id="545-7u-BjW"/>
                 <constraint firstItem="TYC-Q8-jWH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="A9W-mP-Zna"/>
-                <constraint firstItem="dDm-5y-ZfF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CPb-EM-PpD"/>
-                <constraint firstItem="dDm-5y-ZfF" firstAttribute="top" secondItem="TYC-Q8-jWH" secondAttribute="bottom" constant="10" id="ItC-Eq-6h0"/>
-                <constraint firstAttribute="trailing" secondItem="dDm-5y-ZfF" secondAttribute="trailing" id="JLZ-y0-4al"/>
+                <constraint firstItem="dDm-5y-ZfF" firstAttribute="top" secondItem="TYC-Q8-jWH" secondAttribute="bottom" constant="10" id="GEI-zh-Mxb"/>
+                <constraint firstAttribute="bottom" secondItem="dDm-5y-ZfF" secondAttribute="bottom" id="NQd-ih-PPZ"/>
+                <constraint firstAttribute="trailing" secondItem="dDm-5y-ZfF" secondAttribute="trailing" constant="10" id="Vgf-Sg-u9a"/>
                 <constraint firstItem="TYC-Q8-jWH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y0k-mK-0CY"/>
+                <constraint firstItem="dDm-5y-ZfF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="v0B-ON-ajG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerImageView" destination="TYC-Q8-jWH" id="ZIh-M9-i4p"/>
+                <outlet property="headerLabel" destination="dDm-5y-ZfF" id="l8i-BX-14g"/>
+            </connections>
             <point key="canvasLocation" x="-107.5" y="-22"/>
         </view>
     </objects>
+    <resources>
+        <image name="card-action-comment.png" width="16" height="16"/>
+    </resources>
 </document>

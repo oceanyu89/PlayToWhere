@@ -25,17 +25,18 @@
 
 -(void)setTopic:(NewTopic *)topic
 {
+    _topic = topic;
     User *user = [User new];
-    [user setValuesForKeysWithDictionary:(NSDictionary*)topic.user];
+    [user setValuesForKeysWithDictionary:(NSDictionary*)_topic.user];
     self.userName.text = user.username;
     self.userImageView.image = [UIImage imageNamed:@"default_user_head"];
 
     [self.userImageView setImageWithURL:[NSURL URLWithString:user.headimg] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
     self.userImageView.layer.cornerRadius = self.userImageView.bounds.size.width*0.5;
     self.userImageView.layer.masksToBounds = YES;
-    self.userDate.text = topic.ctime;
-    self.contentLabel.text = topic.content;
-    [self createImageWithLayout:topic];
+    self.userDate.text = _topic.ctime;
+    self.contentLabel.text = _topic.content;
+    [self createImageWithLayout:_topic];
 
 }
 

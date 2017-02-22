@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HeaderViewForDetailTVC : UIView
+@property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
+@property (weak, nonatomic) IBOutlet UILabel *headerLabel;
 
 @end

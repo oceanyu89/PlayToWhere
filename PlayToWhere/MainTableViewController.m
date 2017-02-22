@@ -14,7 +14,7 @@
 #import "LastSection_model.h"
 #import "ThirdSectionSonVC.h"
 #import "ThirdSectionDetail.h"
-#import "DetailVC.h"
+#import "MainVC.h"
 
 static NSString * const identifier = @"myCell";
 @interface MainTableViewController ()<FirstSectionCellDelegate,ThirdSectionView_CustomDelegate,buttonAndImageViewDelegate>
@@ -58,9 +58,11 @@ static NSString * const identifier = @"myCell";
 -(void)beginLoadNewData
 {
     [SVProgressHUD showWithStatus:@"正在加载"];
-    [self dispatchGetData];
+   [self dispatchGetData];
+
 //    [self loadNewData];
 }
+
 
 -(void)dispatchGetData
 {
@@ -116,10 +118,16 @@ static NSString * const identifier = @"myCell";
         return 1;
 }
 #pragma mark -单击手势事件
--(void)viewClicked:(buttonAndImageView *)buttonAndImageView
+-(void)viewClicked:(buttonAndImageView *)buttonAndImageView andLists:(list_model *)lists
 {
-    DetailVC *detailVC = [DetailVC new];
-    [self presentViewController:detailVC animated:YES completion:nil];
+//    DetailVC *detailVC = [DetailVC new];
+//    detailVC.lists = lists;
+//    [self presentViewController:detailVC animated:YES completion:nil];
+//    HomesViewController *home = [HomesViewController new];
+//    [self presentViewController:home animated:YES completion:nil];
+        MainVC *home = [MainVC new];
+        home.lists = lists;
+        [self presentViewController:home animated:YES completion:nil];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -147,6 +155,7 @@ static NSString * const identifier = @"myCell";
                 [haowan setValuesForKeysWithDictionary:(NSDictionary*)lists.haowan];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [iv createSomeView:lists.icon_url andTitle:lists.title andNote:[NSString stringWithFormat:@"%ld精选",(long)haowan.total]];
+                    iv.lists = lists;
                     [cell.secondSectionScrollView addSubview:iv];
                 });
             }

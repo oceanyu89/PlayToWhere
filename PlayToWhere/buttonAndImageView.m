@@ -54,7 +54,7 @@
 #pragma mark -单击手势事件
 -(void)presentToNextViewWithClicked:(UIButton *)sender
 {
-    [self.delegate viewClicked:self];
+    [self.delegate viewClicked:self andLists:self.lists];
 }
 
 /*

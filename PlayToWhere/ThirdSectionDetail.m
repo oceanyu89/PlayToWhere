@@ -138,21 +138,7 @@
         [self.tableView.mj_footer endRefreshing];
         self.tableView.mj_footer.hidden = YES;
     }];
-//    AFHTTPSessionManager *manager = [GetHTTPData manager];
-//    [manager GET:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        if (responseObject) {
-//            
-//            self.model2 = [SecondSectionWithTopic yy_modelWithJSON:responseObject];
-////            self.topics = [self.modeltemp.data.topics mutableCopy];
-//            [self.topics addObjectsFromArray:self.model2.data.topics];
-//            [SVProgressHUD dismiss];
-//            [self.tableView reloadData];
-//           [self.tableView.mj_footer endRefreshing];
-//         self.tableView.mj_footer.hidden = YES;
-//        }
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        
-//    }];
+
 
 }
 
