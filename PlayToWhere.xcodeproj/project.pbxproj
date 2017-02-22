@@ -42,19 +42,19 @@
 		BB7DBF551E5C32FA0065211B /* SecondCellForAllSecondSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7DBF531E5C32FA0065211B /* SecondCellForAllSecondSection.m */; };
 		BB7DBF561E5C32FA0065211B /* SecondCellForAllSecondSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */; };
 		BB89FD331E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD321E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m */; };
-		BB89FD461E5D6A3600D22CFA /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD351E5D6A3600D22CFA /* UIView+ZJFrame.m */; };
-		BB89FD471E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD371E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.m */; };
-		BB89FD481E5D6A3600D22CFA /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD391E5D6A3600D22CFA /* ZJContentView.m */; };
-		BB89FD491E5D6A3600D22CFA /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD3B1E5D6A3600D22CFA /* ZJCollectionView.m */; };
-		BB89FD4A1E5D6A3600D22CFA /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD3D1E5D6A3600D22CFA /* ZJTitleView.m */; };
-		BB89FD4B1E5D6A3600D22CFA /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD3F1E5D6A3600D22CFA /* ZJScrollPageView.m */; };
-		BB89FD4C1E5D6A3600D22CFA /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD411E5D6A3600D22CFA /* ZJScrollSegmentView.m */; };
-		BB89FD4D1E5D6A3600D22CFA /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD431E5D6A3600D22CFA /* ZJSegmentStyle.m */; };
-		BB89FD501E5D6A7600D22CFA /* ZJPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD4F1E5D6A7600D22CFA /* ZJPageViewController.m */; };
 		BB89FD561E5D6BCA00D22CFA /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD551E5D6BCA00D22CFA /* FirstVC.m */; };
 		BB89FD591E5D6BE100D22CFA /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD581E5D6BE100D22CFA /* SecondVC.m */; };
 		BB89FD5C1E5D6BEB00D22CFA /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD5B1E5D6BEB00D22CFA /* ThirdVC.m */; };
 		BB89FD5F1E5D72B800D22CFA /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD5E1E5D72B800D22CFA /* MainVC.m */; };
+		BB89FD731E5D953200D22CFA /* UIView+ZJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD631E5D953200D22CFA /* UIView+ZJFrame.m */; };
+		BB89FD741E5D953200D22CFA /* UIViewController+ZJScrollPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD651E5D953200D22CFA /* UIViewController+ZJScrollPageController.m */; };
+		BB89FD751E5D953200D22CFA /* ZJCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD671E5D953200D22CFA /* ZJCollectionView.m */; };
+		BB89FD761E5D953200D22CFA /* ZJContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD691E5D953200D22CFA /* ZJContentView.m */; };
+		BB89FD771E5D953200D22CFA /* ZJScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD6B1E5D953200D22CFA /* ZJScrollPageView.m */; };
+		BB89FD781E5D953200D22CFA /* ZJScrollSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD6E1E5D953200D22CFA /* ZJScrollSegmentView.m */; };
+		BB89FD791E5D953200D22CFA /* ZJSegmentStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD701E5D953200D22CFA /* ZJSegmentStyle.m */; };
+		BB89FD7A1E5D953200D22CFA /* ZJTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD721E5D953200D22CFA /* ZJTitleView.m */; };
+		BB89FD7D1E5D956700D22CFA /* ZJPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD7C1E5D956700D22CFA /* ZJPageViewController.m */; };
 		BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */; };
 		BB8E4AB21E4D690C00C78C04 /* SecondSectionXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8E4AB01E4D690C00C78C04 /* SecondSectionXibCell.m */; };
 		BB8E4AB31E4D690C00C78C04 /* SecondSectionXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8E4AB11E4D690C00C78C04 /* SecondSectionXibCell.xib */; };
@@ -595,25 +595,6 @@
 		BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondCellForAllSecondSection.xib; sourceTree = "<group>"; };
 		BB89FD311E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCopyFromNVWithoutTV.h; sourceTree = "<group>"; };
 		BB89FD321E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCopyFromNVWithoutTV.m; sourceTree = "<group>"; };
-		BB89FD341E5D6A3600D22CFA /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
-		BB89FD351E5D6A3600D22CFA /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
-		BB89FD361E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
-		BB89FD371E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
-		BB89FD381E5D6A3600D22CFA /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
-		BB89FD391E5D6A3600D22CFA /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
-		BB89FD3A1E5D6A3600D22CFA /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
-		BB89FD3B1E5D6A3600D22CFA /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
-		BB89FD3C1E5D6A3600D22CFA /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
-		BB89FD3D1E5D6A3600D22CFA /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
-		BB89FD3E1E5D6A3600D22CFA /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
-		BB89FD3F1E5D6A3600D22CFA /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
-		BB89FD401E5D6A3600D22CFA /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
-		BB89FD411E5D6A3600D22CFA /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
-		BB89FD421E5D6A3600D22CFA /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
-		BB89FD431E5D6A3600D22CFA /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
-		BB89FD441E5D6A3600D22CFA /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
-		BB89FD4E1E5D6A7600D22CFA /* ZJPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJPageViewController.h; path = ../../../PlayToWhere/PlayToWhere/ZJPageViewController.h; sourceTree = "<group>"; };
-		BB89FD4F1E5D6A7600D22CFA /* ZJPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJPageViewController.m; path = ../../../PlayToWhere/PlayToWhere/ZJPageViewController.m; sourceTree = "<group>"; };
 		BB89FD541E5D6BCA00D22CFA /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
 		BB89FD551E5D6BCA00D22CFA /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
 		BB89FD571E5D6BE100D22CFA /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
@@ -622,6 +603,25 @@
 		BB89FD5B1E5D6BEB00D22CFA /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
 		BB89FD5D1E5D72B800D22CFA /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
 		BB89FD5E1E5D72B800D22CFA /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		BB89FD621E5D953200D22CFA /* UIView+ZJFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJFrame.h"; sourceTree = "<group>"; };
+		BB89FD631E5D953200D22CFA /* UIView+ZJFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJFrame.m"; sourceTree = "<group>"; };
+		BB89FD641E5D953200D22CFA /* UIViewController+ZJScrollPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZJScrollPageController.h"; sourceTree = "<group>"; };
+		BB89FD651E5D953200D22CFA /* UIViewController+ZJScrollPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZJScrollPageController.m"; sourceTree = "<group>"; };
+		BB89FD661E5D953200D22CFA /* ZJCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCollectionView.h; sourceTree = "<group>"; };
+		BB89FD671E5D953200D22CFA /* ZJCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCollectionView.m; sourceTree = "<group>"; };
+		BB89FD681E5D953200D22CFA /* ZJContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJContentView.h; sourceTree = "<group>"; };
+		BB89FD691E5D953200D22CFA /* ZJContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJContentView.m; sourceTree = "<group>"; };
+		BB89FD6A1E5D953200D22CFA /* ZJScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageView.h; sourceTree = "<group>"; };
+		BB89FD6B1E5D953200D22CFA /* ZJScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollPageView.m; sourceTree = "<group>"; };
+		BB89FD6C1E5D953200D22CFA /* ZJScrollPageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollPageViewDelegate.h; sourceTree = "<group>"; };
+		BB89FD6D1E5D953200D22CFA /* ZJScrollSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollSegmentView.h; sourceTree = "<group>"; };
+		BB89FD6E1E5D953200D22CFA /* ZJScrollSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollSegmentView.m; sourceTree = "<group>"; };
+		BB89FD6F1E5D953200D22CFA /* ZJSegmentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentStyle.h; sourceTree = "<group>"; };
+		BB89FD701E5D953200D22CFA /* ZJSegmentStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentStyle.m; sourceTree = "<group>"; };
+		BB89FD711E5D953200D22CFA /* ZJTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTitleView.h; sourceTree = "<group>"; };
+		BB89FD721E5D953200D22CFA /* ZJTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTitleView.m; sourceTree = "<group>"; };
+		BB89FD7B1E5D956700D22CFA /* ZJPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPageViewController.h; sourceTree = "<group>"; };
+		BB89FD7C1E5D956700D22CFA /* ZJPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPageViewController.m; sourceTree = "<group>"; };
 		BB8E4AAB1E4D5FF100C78C04 /* UIViewController+PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentViewController.h"; sourceTree = "<group>"; };
 		BB8E4AAC1E4D5FF100C78C04 /* UIViewController+PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentViewController.m"; sourceTree = "<group>"; };
 		BB8E4AAF1E4D690C00C78C04 /* SecondSectionXibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondSectionXibCell.h; sourceTree = "<group>"; };
@@ -1690,33 +1690,6 @@
 			name = temp;
 			sourceTree = "<group>";
 		};
-		BB89FD451E5D6A3600D22CFA /* ZJScrollPageView */ = {
-			isa = PBXGroup;
-			children = (
-				BB89FD341E5D6A3600D22CFA /* UIView+ZJFrame.h */,
-				BB89FD351E5D6A3600D22CFA /* UIView+ZJFrame.m */,
-				BB89FD361E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.h */,
-				BB89FD371E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.m */,
-				BB89FD381E5D6A3600D22CFA /* ZJContentView.h */,
-				BB89FD391E5D6A3600D22CFA /* ZJContentView.m */,
-				BB89FD3A1E5D6A3600D22CFA /* ZJCollectionView.h */,
-				BB89FD3B1E5D6A3600D22CFA /* ZJCollectionView.m */,
-				BB89FD3C1E5D6A3600D22CFA /* ZJTitleView.h */,
-				BB89FD3D1E5D6A3600D22CFA /* ZJTitleView.m */,
-				BB89FD3E1E5D6A3600D22CFA /* ZJScrollPageView.h */,
-				BB89FD3F1E5D6A3600D22CFA /* ZJScrollPageView.m */,
-				BB89FD401E5D6A3600D22CFA /* ZJScrollSegmentView.h */,
-				BB89FD411E5D6A3600D22CFA /* ZJScrollSegmentView.m */,
-				BB89FD421E5D6A3600D22CFA /* ZJSegmentStyle.h */,
-				BB89FD431E5D6A3600D22CFA /* ZJSegmentStyle.m */,
-				BB89FD441E5D6A3600D22CFA /* ZJScrollPageViewDelegate.h */,
-				BB89FD4E1E5D6A7600D22CFA /* ZJPageViewController.h */,
-				BB89FD4F1E5D6A7600D22CFA /* ZJPageViewController.m */,
-			);
-			name = ZJScrollPageView;
-			path = "../../ZJScrollPageView-master/ZJScrollPageView/ZJScrollPageView";
-			sourceTree = "<group>";
-		};
 		BB89FD601E5D7F0E00D22CFA /* TEMP */ = {
 			isa = PBXGroup;
 			children = (
@@ -1725,6 +1698,32 @@
 				BBFC5BD31E5A8E99003DB623 /* SectionView.xib */,
 			);
 			name = TEMP;
+			sourceTree = "<group>";
+		};
+		BB89FD611E5D953200D22CFA /* ZJScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				BB89FD7B1E5D956700D22CFA /* ZJPageViewController.h */,
+				BB89FD7C1E5D956700D22CFA /* ZJPageViewController.m */,
+				BB89FD621E5D953200D22CFA /* UIView+ZJFrame.h */,
+				BB89FD631E5D953200D22CFA /* UIView+ZJFrame.m */,
+				BB89FD641E5D953200D22CFA /* UIViewController+ZJScrollPageController.h */,
+				BB89FD651E5D953200D22CFA /* UIViewController+ZJScrollPageController.m */,
+				BB89FD661E5D953200D22CFA /* ZJCollectionView.h */,
+				BB89FD671E5D953200D22CFA /* ZJCollectionView.m */,
+				BB89FD681E5D953200D22CFA /* ZJContentView.h */,
+				BB89FD691E5D953200D22CFA /* ZJContentView.m */,
+				BB89FD6A1E5D953200D22CFA /* ZJScrollPageView.h */,
+				BB89FD6B1E5D953200D22CFA /* ZJScrollPageView.m */,
+				BB89FD6C1E5D953200D22CFA /* ZJScrollPageViewDelegate.h */,
+				BB89FD6D1E5D953200D22CFA /* ZJScrollSegmentView.h */,
+				BB89FD6E1E5D953200D22CFA /* ZJScrollSegmentView.m */,
+				BB89FD6F1E5D953200D22CFA /* ZJSegmentStyle.h */,
+				BB89FD701E5D953200D22CFA /* ZJSegmentStyle.m */,
+				BB89FD711E5D953200D22CFA /* ZJTitleView.h */,
+				BB89FD721E5D953200D22CFA /* ZJTitleView.m */,
+			);
+			path = ZJScrollPageView;
 			sourceTree = "<group>";
 		};
 		BB8E4AAE1E4D647D00C78C04 /* Catogory */ = {
@@ -1799,7 +1798,7 @@
 		BBA5D57B1E4C54EB00D2CB44 /* 三方库 */ = {
 			isa = PBXGroup;
 			children = (
-				BB89FD451E5D6A3600D22CFA /* ZJScrollPageView */,
+				BB89FD611E5D953200D22CFA /* ZJScrollPageView */,
 				BBA3BD701E55576100C33568 /* Masonry */,
 				BBC1D7BE1E51646A00CBCD46 /* YYModel */,
 				BBC1D7A91E51578B00CBCD46 /* AFNetworking */,
@@ -2725,6 +2724,7 @@
 				BBC1D7E11E5178ED00CBCD46 /* Topic.m in Sources */,
 				BBB994AB1E4CC4CB00B471B3 /* ContainerViewController.m in Sources */,
 				BBFC5BD21E5A8E27003DB623 /* SectionView.m in Sources */,
+				BB89FD771E5D953200D22CFA /* ZJScrollPageView.m in Sources */,
 				BB0F72401E2DA8D000ECE3F1 /* PlayToWhereViewController.m in Sources */,
 				BBA3BD8C1E55576100C33568 /* MASCompositeConstraint.m in Sources */,
 				BBC1D7F81E51D35B00CBCD46 /* LastSection_model.m in Sources */,
@@ -2735,7 +2735,6 @@
 				BB89FD591E5D6BE100D22CFA /* SecondVC.m in Sources */,
 				BBC1D7C91E51716F00CBCD46 /* SectionTwoToInteresting.m in Sources */,
 				BBA3BD951E55576100C33568 /* ViewController+MASAdditions.m in Sources */,
-				BB89FD461E5D6A3600D22CFA /* UIView+ZJFrame.m in Sources */,
 				BB0068C51E54409F0033FC75 /* FirstCell.m in Sources */,
 				BBA5D5B11E4C55A300D2CB44 /* MJRefreshAutoNormalFooter.m in Sources */,
 				BBA5D5B71E4C55A300D2CB44 /* MJRefreshNormalHeader.m in Sources */,
@@ -2747,12 +2746,11 @@
 				BBFB44EA1E2CD98B007A48EE /* DestinationCollectionViewController.m in Sources */,
 				BBC1D7DE1E51787900CBCD46 /* Haowan.m in Sources */,
 				BBC1D7BC1E51578B00CBCD46 /* AFURLSessionManager.m in Sources */,
-				BB89FD491E5D6A3600D22CFA /* ZJCollectionView.m in Sources */,
-				BB89FD501E5D6A7600D22CFA /* ZJPageViewController.m in Sources */,
 				BBC1D7C51E51646A00CBCD46 /* YYClassInfo.m in Sources */,
 				BBA3BD921E55576100C33568 /* NSArray+MASAdditions.m in Sources */,
 				BBA5D5FC1E4C76BF00D2CB44 /* UIView+Frame.m in Sources */,
 				BBA5D5B21E4C55A300D2CB44 /* MJRefreshAutoStateFooter.m in Sources */,
+				BB89FD791E5D953200D22CFA /* ZJSegmentStyle.m in Sources */,
 				BBFB44FB1E2CEFBD007A48EE /* FirstSectionCell.m in Sources */,
 				BBA5D5B01E4C55A300D2CB44 /* MJRefreshAutoGifFooter.m in Sources */,
 				BBC1D7A11E5154E700CBCD46 /* AFImageDownloader.m in Sources */,
@@ -2767,6 +2765,8 @@
 				BBA5D5BD1E4C55A300D2CB44 /* UIScrollView+MJRefresh.m in Sources */,
 				BBA5D5CE1E4C5B6C00D2CB44 /* SVRadialGradientLayer.m in Sources */,
 				BBA5D5AD1E4C55A300D2CB44 /* MJRefreshComponent.m in Sources */,
+				BB89FD781E5D953200D22CFA /* ZJScrollSegmentView.m in Sources */,
+				BB89FD741E5D953200D22CFA /* UIViewController+ZJScrollPageController.m in Sources */,
 				BB318B4C1E5826C300E1B052 /* HeaderViewForDetailTVC.m in Sources */,
 				BBA3BD9B1E55A84B00C33568 /* CustomCommentCell.m in Sources */,
 				BBCD0EC21E584BC7008B9209 /* temp.m in Sources */,
@@ -2784,34 +2784,33 @@
 				BBA3BD981E557A4800C33568 /* NightBoxLocation.m in Sources */,
 				BBC1D7B81E51578B00CBCD46 /* AFNetworkReachabilityManager.m in Sources */,
 				BBC1D7A81E5154E700CBCD46 /* UIWebView+AFNetworking.m in Sources */,
-				BB89FD481E5D6A3600D22CFA /* ZJContentView.m in Sources */,
 				BB89FD331E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m in Sources */,
 				BB8E4AAD1E4D5FF100C78C04 /* UIViewController+PresentViewController.m in Sources */,
 				BBC1D7B71E51578B00CBCD46 /* AFHTTPSessionManager.m in Sources */,
 				BBA5D6341E4C928A00D2CB44 /* NearPeopleTableViewController.m in Sources */,
+				BB89FD751E5D953200D22CFA /* ZJCollectionView.m in Sources */,
 				BBA5D5AC1E4C55A300D2CB44 /* MJRefreshBackFooter.m in Sources */,
-				BB89FD4B1E5D6A3600D22CFA /* ZJScrollPageView.m in Sources */,
 				BBA5D5B51E4C55A300D2CB44 /* MJRefreshBackStateFooter.m in Sources */,
 				BBC1D7CF1E51766C00CBCD46 /* list_model.m in Sources */,
 				BB1D7A641E53203200FDF80C /* ThirdSectionDetail.m in Sources */,
 				BBA5D5B61E4C55A300D2CB44 /* MJRefreshGifHeader.m in Sources */,
-				BB89FD4C1E5D6A3600D22CFA /* ZJScrollSegmentView.m in Sources */,
 				BBA5D5B31E4C55A300D2CB44 /* MJRefreshBackGifFooter.m in Sources */,
 				BBC1D7A31E5154E700CBCD46 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				BB89FD761E5D953200D22CFA /* ZJContentView.m in Sources */,
 				BB89FD561E5D6BCA00D22CFA /* FirstVC.m in Sources */,
 				BBA5D5BA1E4C55A300D2CB44 /* MJRefreshConst.m in Sources */,
 				BB0068DB1E545C1A0033FC75 /* NewTopic.m in Sources */,
-				BB89FD4D1E5D6A3600D22CFA /* ZJSegmentStyle.m in Sources */,
 				BBC1D7BB1E51578B00CBCD46 /* AFURLResponseSerialization.m in Sources */,
 				BBC1D7A61E5154E700CBCD46 /* UIProgressView+AFNetworking.m in Sources */,
 				BB5865C11E4895BD00075EC8 /* TabBarPhoto.m in Sources */,
 				BBA5D5CB1E4C5B6C00D2CB44 /* SVProgressAnimatedView.m in Sources */,
 				BB0068E11E545D4F0033FC75 /* Comment.m in Sources */,
 				BB0068BF1E5404490033FC75 /* SecondSectionWithoutList.m in Sources */,
-				BB89FD4A1E5D6A3600D22CFA /* ZJTitleView.m in Sources */,
+				BB89FD7A1E5D953200D22CFA /* ZJTitleView.m in Sources */,
 				BB9B089C1E4AAEEB0078CFA4 /* CustomButton_leftTitleRightImage.m in Sources */,
 				BBC1D78A1E514D1900CBCD46 /* CustomHeaderSectionView.m in Sources */,
 				BBA5D5AB1E4C55A300D2CB44 /* MJRefreshAutoFooter.m in Sources */,
+				BB89FD7D1E5D956700D22CFA /* ZJPageViewController.m in Sources */,
 				BB318B511E5839D900E1B052 /* WebUtile.m in Sources */,
 				BB7DBF451E5BED5F0065211B /* FirstCellForAllSecondSection.m in Sources */,
 				BB7DBF4C1E5C319C0065211B /* CircleLabel.m in Sources */,
@@ -2839,7 +2838,6 @@
 				BBA5D5AF1E4C55A300D2CB44 /* MJRefreshHeader.m in Sources */,
 				BBA5D62A1E4C830C00D2CB44 /* EatViewController.m in Sources */,
 				BBA5D5B81E4C55A300D2CB44 /* MJRefreshStateHeader.m in Sources */,
-				BB89FD471E5D6A3600D22CFA /* UIViewController+ZJScrollPageController.m in Sources */,
 				BB89FD5F1E5D72B800D22CFA /* MainVC.m in Sources */,
 				BBA5D5CA1E4C5B6C00D2CB44 /* SVIndefiniteAnimatedView.m in Sources */,
 				BB1D7A5E1E52E8DD00FDF80C /* VCCopyFromNV.m in Sources */,
@@ -2847,6 +2845,7 @@
 				BB89FD5C1E5D6BEB00D22CFA /* ThirdVC.m in Sources */,
 				BBC1D7C41E51646A00CBCD46 /* NSObject+YYModel.m in Sources */,
 				BB7DBF3E1E5BE93F0065211B /* CircleButton.m in Sources */,
+				BB89FD731E5D953200D22CFA /* UIView+ZJFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
