@@ -550,7 +550,8 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
         collectionView.bounces = YES;
         [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellID];
         collectionView.bounces = self.segmentView.segmentStyle.isContentViewBounces;
-        collectionView.scrollEnabled = self.segmentView.segmentStyle.isScrollContentView;
+//        collectionView.scrollEnabled = self.segmentView.segmentStyle.isScrollContentView;
+        collectionView.scrollEnabled  =NO;//modify by yuhy 不让他手动滑动，只可以点击滑动
         [self addSubview:collectionView];
         _collectionView = collectionView;
     }

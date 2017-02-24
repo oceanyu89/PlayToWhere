@@ -40,7 +40,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "UIButton+AFNetworking.h"
 #import "WebUtile.h"
-
+#import "YYTextView.h"
 
 #define kTimeOutInterval  60
 
@@ -53,6 +53,10 @@
 #pragma mark - 字体
 /***  普通字体 */
 #define kFont(size) [UIFont systemFontOfSize:((size) * SCREEN_WIDTH_RATIO + SCREEN_WIDTH_RATIO * (SCREEN_WIDTH_RATIO < 1 ? 1 : - 1 ))]
+// 随机颜色
+#define randomColor [UIColor colorWith255Red:arc4random()%255 green:arc4random()%255 blue:arc4random()%255 alpha:255]
+//默认图片
+#define defaultPhoto [UIImage imageNamed:@"default_user_head"]
 
 #endif /* PrefixHeader_pch */
 

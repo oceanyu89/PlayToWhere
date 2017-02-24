@@ -11,10 +11,11 @@
 @implementation CircleLabel
 -(void)layoutSubviews
 {
-    self.layer.cornerRadius = 6*SCREEN_WIDTH_RATIO;
+    self.layer.cornerRadius = self.width*0.5;
+    self.layer.masksToBounds = YES;
     self.textAlignment = NSTextAlignmentCenter;
     self.font = kFont(8);
-    self.backgroundColor = [UIColor grayColor];
+    self.backgroundColor = [UIColor whiteColor];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -13,6 +13,8 @@
 #import "ZJScrollSegmentView.h"
 #import "ZJContentView.h"
 #import "HeaderViewForDetailTVC.h"
+#import "detail_request.h"
+
 static CGFloat const segmentViewHeight = 44.0;
 static CGFloat const naviBarHeight = 64.0;
 static CGFloat const headViewHeight = 210.0;
@@ -41,6 +43,7 @@ NSString *const ZJParentTableViewDidLeaveFromTopNotification = @"ZJParentTableVi
 @property (strong, nonatomic) UIScrollView *childScrollView;
 @property (strong, nonatomic) ZJCustomGestureTableView *tableView;
 @property(nonatomic,strong)HeaderViewForDetailTVC * headerView;
+@property(nonatomic,strong)detail_request *request_model;
 @end
 static NSString * const cellID = @"cellID";
 
@@ -125,8 +128,10 @@ static NSString * const cellID = @"cellID";
 
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
-
+//    [self getHtttpData];
 }
+
+
 #pragma ZJScrollPageViewDelegate 代理方法
 - (NSInteger)numberOfChildViewControllers {
     return self.titles.count;
@@ -139,6 +144,7 @@ static NSString * const cellID = @"cellID";
             childVc = [[FirstVC alloc] init];
             FirstVC *vc = (FirstVC *)childVc;
             vc.delegate = self;
+            
         } else if(index==1){
             childVc = [[SecondVC alloc] init];
             SecondVC *vc = (SecondVC *)childVc;

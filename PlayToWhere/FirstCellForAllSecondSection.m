@@ -22,7 +22,20 @@
     FirstCellForAllSecondSection *cell = [[NSBundle mainBundle]loadNibNamed:@"FirstCellForAllSecondSection" owner:nil options:nil].firstObject;
     return cell;
 }
-
+-(void)setList:(detail_list *)list
+{
+    _list = list;
+    self.userImageView.layer.cornerRadius = self.userImageView.bounds.size.width*0.5;
+    self.userImageView.clipsToBounds = YES;
+    
+    self.nameLabel.text = list.user.username;
+    [self.userImageView setImageWithURL:[NSURL URLWithString:list.user.headimg] placeholderImage:defaultPhoto];
+    [self.addressName setTitle :list.location forState:UIControlStateNormal];
+    NSDateFormatter *df = [NSDateFormatter new];
+    df.dateFormat = @"MM月dd日";
+    self.dateLabel.text = [df stringFromDate:list.ctime];
+    
+}
 - (IBAction)addressBtn:(UIButton *)sender {
 }
 

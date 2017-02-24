@@ -9,6 +9,7 @@
 #import "ZJPageViewController.h"
 #import "ZJPageViewController.h"
 #import "ZJScrollPageViewDelegate.h"
+#import "detail_request.h"
 @interface FirstVC : ZJPageViewController<ZJScrollPageViewChildVcDelegate>
-
+@property(nonatomic,strong)detail_request *request_model;
 @end

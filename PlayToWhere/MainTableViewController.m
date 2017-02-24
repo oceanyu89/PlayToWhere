@@ -66,44 +66,30 @@ static NSString * const identifier = @"myCell";
 
 -(void)dispatchGetData
 {
-    //同时开3个线程，来进行并行获取数据
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            //耗时操作
-            //section1 数据请求
-            NSString *stringURL = @"http://nahaowan.com/api/v1/collection/list?list=explore&location=%E6%B7%B1%E5%9C%B3&offset=0";
-            NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
-                self.model1  = [SectionTwoToInteresting yy_modelWithJSON:obj];
-                [SVProgressHUD dismiss];
-                [self.tableView reloadData];
-                [self.tableView.mj_header endRefreshing];
-            }];
-    
-        });
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            //耗时操作
-            //section2 数据请求
-            NSString *stringURL =@"http://nahaowan.com/api/v1/group/list?list=hot&location=%E6%B7%B1%E5%9C%B3";
-             NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
-                self.model2 = [SectionTwoToInteresting yy_modelWithJSON:obj];
-                [SVProgressHUD dismiss];
-                [self.tableView reloadData];
-                [self.tableView.mj_header endRefreshing];
-            }];
-        });
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            //section3 数据请求
-            NSString *stringURL =@"http://nahaowan.com/api/v2/haowan/list/ad?geo=22.6481848889781%2C114.210079510808&location=%E6%B7%B1%E5%9C%B3";
-            NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-            [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
-                self.model3 =[LastSection_model yy_modelWithJSON:obj];
-                [SVProgressHUD dismiss];
-                [self.tableView reloadData];
-                [self.tableView.mj_header endRefreshing];
-            }];
-        });
-    
+        //section1 数据请求
+        NSString *stringURL = @"http://nahaowan.com/api/v1/collection/list?list=explore&location=%E6%B7%B1%E5%9C%B3&offset=0";
+        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+            self.model1  = [SectionTwoToInteresting yy_modelWithJSON:obj];
+            [self.tableView reloadData];
+        }];
+
+        //section2 数据请求
+        stringURL =@"http://nahaowan.com/api/v1/group/list?list=hot&location=%E6%B7%B1%E5%9C%B3";
+//             NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+            self.model2 = [SectionTwoToInteresting yy_modelWithJSON:obj];
+            [self.tableView reloadData];
+        }];
+        //section3 数据请求
+        stringURL =@"http://nahaowan.com/api/v2/haowan/list/ad?geo=22.6481848889781%2C114.210079510808&location=%E6%B7%B1%E5%9C%B3";
+//            NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        [WebUtile requesHttpData:stringURL andSome:dic andReCallData:^(id obj) {
+            self.model3 =[LastSection_model yy_modelWithJSON:obj];
+            [SVProgressHUD dismiss];
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+        }];
     
 }
 
@@ -120,11 +106,6 @@ static NSString * const identifier = @"myCell";
 #pragma mark -单击手势事件
 -(void)viewClicked:(buttonAndImageView *)buttonAndImageView andLists:(list_model *)lists
 {
-//    DetailVC *detailVC = [DetailVC new];
-//    detailVC.lists = lists;
-//    [self presentViewController:detailVC animated:YES completion:nil];
-//    HomesViewController *home = [HomesViewController new];
-//    [self presentViewController:home animated:YES completion:nil];
         MainVC *home = [MainVC new];
         home.lists = lists;
         [self presentViewController:home animated:YES completion:nil];
@@ -181,17 +162,13 @@ static NSString * const identifier = @"myCell";
     {
         ForthSectionCell *cell = [ForthSectionCell ForthSectionCellForMain:tableView];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            
-            Data3_Model *datas = [[Data3_Model alloc]init];
-            [datas setValuesForKeysWithDictionary:self.model3.data[indexPath.row]];
-            
-            image_Model *image = [image_Model new];
-            [image setValuesForKeysWithDictionary:(NSDictionary*)datas.image];
+        Data3_Model *datas = [[Data3_Model alloc]init];
+        [datas setValuesForKeysWithDictionary:self.model3.data[indexPath.row]];
+        
+        image_Model *image = [image_Model new];
+        [image setValuesForKeysWithDictionary:(NSDictionary*)datas.image];
 
-            [cell.showButton setBackgroundImageForState:UIControlStateNormal withURL:[NSURL URLWithString:image.url] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
-        });
-
+        [cell.showButton setBackgroundImageForState:UIControlStateNormal withURL:[NSURL URLWithString:image.url] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
         return cell;
     }
     else

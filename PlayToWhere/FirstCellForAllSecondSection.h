@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "detail_list.h"
 @interface FirstCellForAllSecondSection : UITableViewCell
-
+//@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+//@property (weak, nonatomic) IBOutlet UILabel *userDate;
+//@property (weak, nonatomic) IBOutlet UILabel *userName;
+@property (weak, nonatomic) IBOutlet UIButton *addressName;
+@property(nonatomic,strong)detail_list *list;
 @end

@@ -15,9 +15,9 @@
     [super layoutSubviews];
     CGRect titleF = self.titleLabel.frame;
     CGRect imageF = self.imageView.frame;
-    titleF.origin.x = 0;
+    titleF.origin.x = 0+5;
     self.titleLabel.frame = titleF;
-    imageF.origin.x = CGRectGetMaxX(titleF)+3;
+    imageF.origin.x = CGRectGetMaxX(titleF)+5;
     self.imageView.frame = imageF;
 }
 

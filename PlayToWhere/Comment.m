@@ -10,4 +10,7 @@
 
 @implementation Comment
 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"comments" : [Comments class]};
+}
 @end

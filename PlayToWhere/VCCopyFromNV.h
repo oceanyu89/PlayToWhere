@@ -13,5 +13,5 @@
 @property(nonatomic,strong)UIButton *backBtn;
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UITableView *tableView;
-@property (nonatomic,copy) NSString *title;
+//@property (nonatomic,copy) NSString *title;
 @end
