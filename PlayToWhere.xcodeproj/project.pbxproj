@@ -43,6 +43,11 @@
 		BB7DBF4C1E5C319C0065211B /* CircleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7DBF4B1E5C319C0065211B /* CircleLabel.m */; };
 		BB7DBF551E5C32FA0065211B /* SecondCellForAllSecondSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7DBF531E5C32FA0065211B /* SecondCellForAllSecondSection.m */; };
 		BB7DBF561E5C32FA0065211B /* SecondCellForAllSecondSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */; };
+		BB89B6E31E63B4410084DEB3 /* TalkersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89B6E21E63B4410084DEB3 /* TalkersCell.m */; };
+		BB89B6E61E63C3390084DEB3 /* TalkAboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89B6E51E63C3390084DEB3 /* TalkAboutCell.m */; };
+		BB89B6EF1E640C9C0084DEB3 /* SharedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89B6ED1E640C9C0084DEB3 /* SharedCell.m */; };
+		BB89B6F01E640C9C0084DEB3 /* SharedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB89B6EE1E640C9C0084DEB3 /* SharedCell.xib */; };
+		BB89B6F31E642F7E0084DEB3 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89B6F21E642F7E0084DEB3 /* CustomLayout.m */; };
 		BB89FD331E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD321E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m */; };
 		BB89FD561E5D6BCA00D22CFA /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD551E5D6BCA00D22CFA /* FirstVC.m */; };
 		BB89FD591E5D6BE100D22CFA /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB89FD581E5D6BE100D22CFA /* SecondVC.m */; };
@@ -637,6 +642,15 @@
 		BB7DBF521E5C32FA0065211B /* SecondCellForAllSecondSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondCellForAllSecondSection.h; sourceTree = "<group>"; };
 		BB7DBF531E5C32FA0065211B /* SecondCellForAllSecondSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondCellForAllSecondSection.m; sourceTree = "<group>"; };
 		BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondCellForAllSecondSection.xib; sourceTree = "<group>"; };
+		BB89B6E11E63B4410084DEB3 /* TalkersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkersCell.h; sourceTree = "<group>"; };
+		BB89B6E21E63B4410084DEB3 /* TalkersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkersCell.m; sourceTree = "<group>"; };
+		BB89B6E41E63C3390084DEB3 /* TalkAboutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkAboutCell.h; sourceTree = "<group>"; };
+		BB89B6E51E63C3390084DEB3 /* TalkAboutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkAboutCell.m; sourceTree = "<group>"; };
+		BB89B6EC1E640C9C0084DEB3 /* SharedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedCell.h; sourceTree = "<group>"; };
+		BB89B6ED1E640C9C0084DEB3 /* SharedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedCell.m; sourceTree = "<group>"; };
+		BB89B6EE1E640C9C0084DEB3 /* SharedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SharedCell.xib; sourceTree = "<group>"; };
+		BB89B6F11E642F7E0084DEB3 /* CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		BB89B6F21E642F7E0084DEB3 /* CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
 		BB89FD311E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCopyFromNVWithoutTV.h; sourceTree = "<group>"; };
 		BB89FD321E5D3F5900D22CFA /* VCCopyFromNVWithoutTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCopyFromNVWithoutTV.m; sourceTree = "<group>"; };
 		BB89FD541E5D6BCA00D22CFA /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
@@ -1378,20 +1392,8 @@
 		BB318B491E58268500E1B052 /* SecondSection(兴趣圈) */ = {
 			isa = PBXGroup;
 			children = (
-				BB318B4A1E5826C300E1B052 /* HeaderViewForDetailTVC.h */,
-				BB318B4B1E5826C300E1B052 /* HeaderViewForDetailTVC.m */,
-				BB318B4D1E5826D800E1B052 /* HeaderViewForDetailTVC.xib */,
-				BB7DBF421E5BED5F0065211B /* FirstCellForAllSecondSection.h */,
-				BB7DBF431E5BED5F0065211B /* FirstCellForAllSecondSection.m */,
-				BB7DBF441E5BED5F0065211B /* FirstCellForAllSecondSection.xib */,
-				BB7DBF521E5C32FA0065211B /* SecondCellForAllSecondSection.h */,
-				BB7DBF531E5C32FA0065211B /* SecondCellForAllSecondSection.m */,
-				BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */,
-				BBFA49DB1E5EFFF600EA62B4 /* DescribeViewForCell.h */,
-				BBFA49DC1E5EFFF600EA62B4 /* DescribeViewForCell.m */,
-				BB21FFFE1E5FD35C003C6286 /* FunctionViewForCell.h */,
-				BB21FFFF1E5FD35C003C6286 /* FunctionViewForCell.m */,
-				BBFA49561E5E8F7600EA62B4 /* BigImage(大小图联动) */,
+				BB89B6EB1E640C680084DEB3 /* Shared(分享) */,
+				BB89B6EA1E640C410084DEB3 /* superChance(精选) */,
 			);
 			name = "SecondSection(兴趣圈)";
 			sourceTree = "<group>";
@@ -1805,6 +1807,43 @@
 				BBB994AA1E4CC4CB00B471B3 /* ContainerViewController.m */,
 			);
 			name = "FirstSection(附近)";
+			sourceTree = "<group>";
+		};
+		BB89B6EA1E640C410084DEB3 /* superChance(精选) */ = {
+			isa = PBXGroup;
+			children = (
+				BB318B4A1E5826C300E1B052 /* HeaderViewForDetailTVC.h */,
+				BB318B4B1E5826C300E1B052 /* HeaderViewForDetailTVC.m */,
+				BB318B4D1E5826D800E1B052 /* HeaderViewForDetailTVC.xib */,
+				BB7DBF421E5BED5F0065211B /* FirstCellForAllSecondSection.h */,
+				BB7DBF431E5BED5F0065211B /* FirstCellForAllSecondSection.m */,
+				BB7DBF441E5BED5F0065211B /* FirstCellForAllSecondSection.xib */,
+				BB7DBF521E5C32FA0065211B /* SecondCellForAllSecondSection.h */,
+				BB7DBF531E5C32FA0065211B /* SecondCellForAllSecondSection.m */,
+				BB7DBF541E5C32FA0065211B /* SecondCellForAllSecondSection.xib */,
+				BBFA49DB1E5EFFF600EA62B4 /* DescribeViewForCell.h */,
+				BBFA49DC1E5EFFF600EA62B4 /* DescribeViewForCell.m */,
+				BB21FFFE1E5FD35C003C6286 /* FunctionViewForCell.h */,
+				BB21FFFF1E5FD35C003C6286 /* FunctionViewForCell.m */,
+				BB89B6E11E63B4410084DEB3 /* TalkersCell.h */,
+				BB89B6E21E63B4410084DEB3 /* TalkersCell.m */,
+				BB89B6E41E63C3390084DEB3 /* TalkAboutCell.h */,
+				BB89B6E51E63C3390084DEB3 /* TalkAboutCell.m */,
+				BBFA49561E5E8F7600EA62B4 /* BigImage(大小图联动) */,
+			);
+			name = "superChance(精选)";
+			sourceTree = "<group>";
+		};
+		BB89B6EB1E640C680084DEB3 /* Shared(分享) */ = {
+			isa = PBXGroup;
+			children = (
+				BB89B6EC1E640C9C0084DEB3 /* SharedCell.h */,
+				BB89B6ED1E640C9C0084DEB3 /* SharedCell.m */,
+				BB89B6EE1E640C9C0084DEB3 /* SharedCell.xib */,
+				BB89B6F11E642F7E0084DEB3 /* CustomLayout.h */,
+				BB89B6F21E642F7E0084DEB3 /* CustomLayout.m */,
+			);
+			name = "Shared(分享)";
 			sourceTree = "<group>";
 		};
 		BB89FD1B1E5D22C000D22CFA /* temp */ = {
@@ -2722,6 +2761,7 @@
 				BBA5D4A51E4C29F500D2CB44 /* LoginPageCheckBoxUncheck@2x.png in Resources */,
 				BBA5D47D1E4C29F400D2CB44 /* hint-post@2x.png in Resources */,
 				BBA5D5381E4C29F500D2CB44 /* wechat_F@2x.png in Resources */,
+				BB89B6F01E640C9C0084DEB3 /* SharedCell.xib in Resources */,
 				BBA5D62B1E4C830C00D2CB44 /* EatViewController.xib in Resources */,
 				BBA5D43D1E4C29F400D2CB44 /* DetailPageTabBarIconComment@2x.png in Resources */,
 				BBA5D4201E4C29F400D2CB44 /* card-share-wechat@3x.png in Resources */,
@@ -3011,6 +3051,8 @@
 				BB8E4AB21E4D690C00C78C04 /* SecondSectionXibCell.m in Sources */,
 				BBC1D7F51E51D31400CBCD46 /* Data3_Model.m in Sources */,
 				BBA5D5B41E4C55A300D2CB44 /* MJRefreshBackNormalFooter.m in Sources */,
+				BB89B6F31E642F7E0084DEB3 /* CustomLayout.m in Sources */,
+				BB89B6E31E63B4410084DEB3 /* TalkersCell.m in Sources */,
 				BB4C237D1E4D4A66005A1D7F /* YUHYScrollMenuView.m in Sources */,
 				BBC1D7DB1E51786D00CBCD46 /* Watch.m in Sources */,
 				BB0068D81E545BD00033FC75 /* DataWithTopic.m in Sources */,
@@ -3085,6 +3127,7 @@
 				BB7DBF4C1E5C319C0065211B /* CircleLabel.m in Sources */,
 				BBC1D7D81E5177E300CBCD46 /* User.m in Sources */,
 				BB8E4AB61E4D6C2700C78C04 /* buttonAndImageView.m in Sources */,
+				BB89B6EF1E640C9C0084DEB3 /* SharedCell.m in Sources */,
 				BBC1D7E41E517B2700CBCD46 /* Data_Model.m in Sources */,
 				BBFA49C71E5EFD5B00EA62B4 /* YYTextArchiver.m in Sources */,
 				BBA3BD941E55576100C33568 /* View+MASAdditions.m in Sources */,
@@ -3121,6 +3164,7 @@
 				BB89FD5F1E5D72B800D22CFA /* MainVC.m in Sources */,
 				BBA5D5CA1E4C5B6C00D2CB44 /* SVIndefiniteAnimatedView.m in Sources */,
 				BB1D7A5E1E52E8DD00FDF80C /* VCCopyFromNV.m in Sources */,
+				BB89B6E61E63C3390084DEB3 /* TalkAboutCell.m in Sources */,
 				BBFA49CF1E5EFD5B00EA62B4 /* UIView+YYText.m in Sources */,
 				BB1D7A191E52970B00FDF80C /* GetHTTPData.m in Sources */,
 				BB89FD5C1E5D6BEB00D22CFA /* ThirdVC.m in Sources */,

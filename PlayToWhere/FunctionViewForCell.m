@@ -7,7 +7,7 @@
 //
 
 #import "FunctionViewForCell.h"
-
+#import "HalfCircleBtn.h"
 
 @interface FunctionViewForCell ()
 
@@ -55,6 +55,16 @@
         //起点 增加
         size.width += keyWorldWidth+padding;
     }
+    
+    HalfCircleBtn *btn = [HalfCircleBtn buttonWithType:UIButtonTypeCustom];
+    
+    btn.frame = CGRectMake(SCREEN_WIDTH-90, self.height-30, 80, 30);
+    [btn setImage:[UIImage imageNamed:@"card-action-add-flag"] forState:UIControlStateNormal];
+    [btn setTitle:@"添加标签" forState:UIControlStateNormal];
+//    btn.titleLabel.text = @"添加标签";
+//    btn.titleLabel.textColor = [UIColor redColor];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self addSubview:btn];
     
 }
 //计算文字所占大小

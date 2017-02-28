@@ -44,6 +44,8 @@ NSString *const ZJParentTableViewDidLeaveFromTopNotification = @"ZJParentTableVi
 @property (strong, nonatomic) ZJCustomGestureTableView *tableView;
 @property(nonatomic,strong)HeaderViewForDetailTVC * headerView;
 @property(nonatomic,strong)detail_request *request_model;
+
+
 @end
 static NSString * const cellID = @"cellID";
 
@@ -125,7 +127,7 @@ static NSString * const cellID = @"cellID";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.titleLabel.text = self.lists.title;
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
 //    [self getHtttpData];

@@ -9,17 +9,44 @@
 #import "VCCopyFromNVWithoutTV.h"
 
 @interface VCCopyFromNVWithoutTV ()
-
+@property(nonatomic,strong)UIButton *sharedBtn;
+@property(nonatomic,strong)UIButton *attentionBtn;
 @end
 
 @implementation VCCopyFromNVWithoutTV
-
-
+-(UIButton *)sharedBtn
+{
+    if (_sharedBtn==nil) {
+        _sharedBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _sharedBtn.frame = CGRectMake(SCREEN_WIDTH-35, 30, 30, 30);
+        [_sharedBtn setBackgroundImage:[UIImage imageNamed:@"card-action-share"] forState:UIControlStateNormal];
+        [self.view addSubview:_sharedBtn];
+    }
+    return _sharedBtn;
+}
+-(UIButton *)attentionBtn
+{
+    if (_attentionBtn==nil) {
+        _attentionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _attentionBtn.frame = CGRectMake(SCREEN_WIDTH-100, 30, 50, 30);
+        [_attentionBtn setImage:[UIImage imageNamed:@"add-question_14x14_"] forState:UIControlStateNormal];
+        [_attentionBtn setTitle:@"关注" forState:UIControlStateNormal];
+        _attentionBtn.layer.cornerRadius = 6*SCREEN_WIDTH_RATIO;
+        _attentionBtn.layer.borderColor = [UIColor redColor].CGColor;
+        _attentionBtn.layer.borderWidth =1;
+        _attentionBtn.layer.masksToBounds = YES;
+        _attentionBtn.titleLabel.font = kFont(12);
+        [_attentionBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self.view addSubview:_attentionBtn];
+    }
+    return _attentionBtn;
+}
 -(UIView *)myView
 {
     if (_myView ==nil) {
         _myView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
-        _myView.backgroundColor = [UIColor colorWith255Red:231 green:231 blue:231 alpha:255];
+        _myView.backgroundColor =[UIColor whiteColor];
+//        [UIColor colorWith255Red:231 green:231 blue:231 alpha:255];
         
         [self.view addSubview:_myView];
     }
@@ -59,7 +86,8 @@
     [self myView];
     [self backBtn];
     [self titleLabel];
-
+    [self sharedBtn];
+    [self attentionBtn];
 }
 
 /*

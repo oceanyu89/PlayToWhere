@@ -11,6 +11,9 @@
 #import "detail_user.h"
 #import "Comment.h"
 #import "detail_vote_tags.h"
+@class detail_vote;
+
+
 @interface detail_list : NSObject
 @property(nonatomic,assign) NSInteger uid;
 @property(nonatomic,copy) NSString *title;
@@ -28,6 +31,7 @@
 @property (nonatomic,assign) BOOL is_togo;
 @property (nonatomic,assign) BOOL is_been;
 //vote	Object
+@property(nonatomic,strong)detail_vote *vote;
 //comment	Object
 @property(nonatomic,strong)Comment *comment;
 //togo	Object
@@ -45,5 +49,20 @@
 -(float)textHeight;
 -(float)buttonHeight;
 //-(float)buttonWidth;
+-(float)talkAboutHeight;
+
+
 
 @end
+
+
+@interface detail_vote :NSObject
+
+@property (nonatomic,assign) NSInteger total;
+@property (nonatomic,copy) NSArray* users;
+
+@end
+
+
+
+

@@ -21,4 +21,6 @@
 @property (nonatomic,copy) NSString *url;
 
 @property (nonatomic,assign) NSInteger width;
+
+-(float)photoHeight;
 @end

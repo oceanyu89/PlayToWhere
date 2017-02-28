@@ -12,4 +12,12 @@
 + (NSDictionary *)modelCustomPropertyMapper {
     return @{@"uid" : @"id"};
 }
+
+
+-(float)photoHeight
+{
+    CGFloat photoWidth = (SCREEN_WIDTH-24)*0.5;
+    CGFloat photoHeight = self.height/(self.width/photoWidth);
+    return photoHeight;
+}
 @end

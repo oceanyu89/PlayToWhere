@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SharedCell">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="321"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="321"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWR-Yb-AYN" customClass="CircleButton">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="FcR-bB-9Fy"/>
+                            <constraint firstAttribute="height" constant="50" id="gbT-jB-tK3"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHh-Lw-LIO">
+                        <rect key="frame" x="52" y="8" width="220" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="yB4-P6-V1T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VI-Eu-5AD">
+                        <rect key="frame" x="20" y="291" width="242" height="20"/>
+                        <color key="backgroundColor" red="0.93406587597077273" green="0.93406587597077273" blue="0.93406587597077273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Jyy-C4-SUT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="address" image="card-location.png">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-HM-vou">
+                        <rect key="frame" x="0.0" y="55" width="282" height="231"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bHh-Lw-LIO" secondAttribute="trailing" constant="10" id="4Of-Mi-TZH"/>
+                <constraint firstItem="bHh-Lw-LIO" firstAttribute="leading" secondItem="GWR-Yb-AYN" secondAttribute="trailing" constant="2" id="6ex-9P-0Xu"/>
+                <constraint firstAttribute="bottom" secondItem="0VI-Eu-5AD" secondAttribute="bottom" constant="10" id="9P8-oK-cQ2"/>
+                <constraint firstItem="AZ5-HM-vou" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9cW-gP-mRn"/>
+                <constraint firstItem="bHh-Lw-LIO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="CAt-WG-23D"/>
+                <constraint firstItem="GWR-Yb-AYN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LOn-ea-lsY"/>
+                <constraint firstItem="0VI-Eu-5AD" firstAttribute="top" secondItem="AZ5-HM-vou" secondAttribute="bottom" constant="5" id="LsT-2U-gYR"/>
+                <constraint firstItem="GWR-Yb-AYN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P7U-aD-J6m"/>
+                <constraint firstAttribute="trailing" secondItem="AZ5-HM-vou" secondAttribute="trailing" id="Tsa-jD-mBE"/>
+                <constraint firstItem="AZ5-HM-vou" firstAttribute="top" secondItem="GWR-Yb-AYN" secondAttribute="bottom" constant="5" id="VVd-Hx-te4"/>
+                <constraint firstAttribute="trailing" secondItem="0VI-Eu-5AD" secondAttribute="trailing" constant="20" id="k5Y-UC-brn"/>
+                <constraint firstItem="0VI-Eu-5AD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="uSs-9T-ccv"/>
+            </constraints>
+            <size key="customSize" width="282" height="321"/>
+            <connections>
+                <outlet property="addressBtn" destination="0VI-Eu-5AD" id="7Fx-ie-Cro"/>
+                <outlet property="showBtn" destination="AZ5-HM-vou" id="coQ-hU-OHW"/>
+                <outlet property="userHeadBtn" destination="GWR-Yb-AYN" id="OHQ-V2-5DO"/>
+                <outlet property="userName" destination="bHh-Lw-LIO" id="Vg2-W0-U5z"/>
+            </connections>
+            <point key="canvasLocation" x="-264" y="-83"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card-location.png" width="16" height="16"/>
+    </resources>
+</document>

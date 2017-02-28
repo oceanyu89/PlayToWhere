@@ -13,7 +13,8 @@
 #import "BigImageIndexCollectionView.h"
 #import "DescribeViewForCell.h"
 #import "FunctionViewForCell.h"
-
+#import "TalkersCell.h"
+#import "TalkAboutCell.h"
 @interface FirstVC ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)detail_data *data;
@@ -25,7 +26,7 @@
 -(UITableView *)tableView
 {
     if (_tableView ==nil) {
-        _tableView =[[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView =[[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-108) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [self.view addSubview:_tableView];
@@ -68,6 +69,9 @@
     }if (indexPath.row==4) {
         detail_list *list =self.request_model.data.list[indexPath.section];
         return  [list buttonHeight];
+    }if (indexPath.row==6) {
+        detail_list *list =self.request_model.data.list[indexPath.section];
+        return [list talkAboutHeight];
     }
 
     return 44;
@@ -143,8 +147,21 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell.contentView addSubview:fv];
         return cell;
+    }else if (indexPath.row==5)
+    {
+        detail_list *list =self.request_model.data.list[indexPath.section];
+        TalkersCell *cell = [TalkersCell getCustomCellAtTalker];
+        cell.vote = list.vote;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }else if (indexPath.row==6)
+    {
+        detail_list *list =self.request_model.data.list[indexPath.section];
+        TalkAboutCell *cell = [TalkAboutCell new];
+        cell.comment =list.comment;
+        return cell;
     }
-
+    
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

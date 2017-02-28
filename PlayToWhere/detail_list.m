@@ -39,6 +39,29 @@
     }
         
 }
-
+-(float)talkAboutHeight
+{
+    if (self.comment.total==1) {
+        return 20+5+5;
+    }
+    if (self.comment.total==2) {
+        return 20+20+5+5+5;
+    }
+    return 20+20+20+5+5+5+5;
+}
 
 @end
+
+@implementation detail_vote
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    return @{@"users" : [detail_user class]};
+}
+
+@end
+
+
+
+
+
+

@@ -13,7 +13,7 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenheight [UIScreen mainScreen].bounds.size.height
 
-@interface BigImageIndexCollectionView ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface BigImageIndexCollectionView ()<UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic,assign)BOOL isExpand;
 @property(nonatomic, assign)BOOL shouldDid;
@@ -102,6 +102,5 @@
     self.currentPage = index;
     
 }
-
 
 @end
