@@ -22,9 +22,13 @@
     UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
 
     [cell.imageView setImageWithURL:[NSURL URLWithString:imageName] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
-    
-    [iv setImageWithURL:[NSURL URLWithString:accessoryImageName] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
-    
+    if ([accessoryImageName containsString:@"http"]) {
+            [iv setImageWithURL:[NSURL URLWithString:accessoryImageName] placeholderImage:[UIImage imageNamed:@"default_user_head"]];
+    }
+    else
+    {
+        iv.image = [UIImage imageNamed:accessoryImageName];
+    }
     iv.backgroundColor=[UIColor orangeColor];
     iv.layer.cornerRadius = iv.bounds.size.width*0.5;
     iv.clipsToBounds = YES;

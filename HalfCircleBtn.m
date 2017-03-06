@@ -14,7 +14,6 @@
 {
      [super layoutSubviews];
     self.layer.cornerRadius = self.height*0.5;
-//    self.backgroundColor = [UIColor greenColor];
     self.layer.borderColor = [UIColor redColor].CGColor;
     [self.layer setBorderWidth:1];
      self.layer.masksToBounds = YES;
